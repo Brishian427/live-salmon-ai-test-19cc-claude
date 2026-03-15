@@ -1,0 +1,27 @@
+idea:
+  title: Live Salmon Test for AI Scientists
+  domain: artificial_intelligence
+  hypothesis: 'Providing AI scientists with a known data generating process ("live"
+    salmon) and asking them to analyze it will reveal the strengths and limitations
+    of their methodologies, as evidenced by the collective insights in the papers
+    they produce.
+
+    '
+  background:
+    description: 'The famous dead salmon test asks neuroscientists to see what their
+      methodology learns about a dead salmon. Now we have AI scientists, what if we
+      give them a data generating process ("live" salmon) and see what they can find?
+
+      In order to simulate the whole process, we can even get them to write papers
+      and see if the papers collectively provide any insights.
+
+      '
+  metadata:
+    author: Chenhao Tan
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/JO7GjO2j5O925fmWvksZ
+    idea_id: live_salmon_test_for_ai_scient_20260315_222226_12c48934
+    created_at: '2026-03-15T22:22:26.988539'
+    status: submitted
+    github_repo_name: live-salmon-ai-test-19cc-claude
+    github_repo_url: https://github.com/Hypogenic-AI/live-salmon-ai-test-19cc-claude
