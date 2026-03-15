@@ -1,0 +1,47 @@
+{
+  "description": "Live Salmon Test dataset. Y = 2*X1 + 0.5*X2 - 1.5*X3 + 0.8*(X4*X5) + N(0,1) noise.",
+  "true_formula": "Y = 2*X1 + 0.5*X2 - 1.5*X3 + 0.8*(X4*X5) + epsilon",
+  "noise_distribution": "N(0, 1)",
+  "linear_coefficients": {
+    "X1": 2.0,
+    "X2": 0.5,
+    "X3": -1.5
+  },
+  "interaction_term": {
+    "features": [
+      "X4",
+      "X5"
+    ],
+    "coefficient": 0.8
+  },
+  "truly_predictive_features": [
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5"
+  ],
+  "noise_distractor_features": [
+    "X6",
+    "X7",
+    "X8",
+    "X9",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15"
+  ],
+  "correlated_non_causal_features": {
+    "X16": "correlated with X1 (r~0.7)",
+    "X17": "correlated with X2 (r~0.6)",
+    "X18": "correlated with X3 (r~0.5)",
+    "X19": "correlated with X4 (r~0.8)",
+    "X20": "correlated with X5 (r~0.65)"
+  },
+  "n_samples": 1000,
+  "n_features": 20,
+  "seed": 42,
+  "dead_salmon_note": "The dead_salmon dataset uses the same features but Y is pure N(0,1) noise independent of all features.  Any 'significant' finding on this dataset is a false positive."
+}

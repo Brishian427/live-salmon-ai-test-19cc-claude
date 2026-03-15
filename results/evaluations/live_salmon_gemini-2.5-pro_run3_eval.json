@@ -1,0 +1,84 @@
+{
+  "cache_key": "live_salmon_gemini-2.5-pro_run3",
+  "model_name": "gemini-2.5-pro",
+  "dataset": "live_salmon",
+  "run_id": 3,
+  "claims": {
+    "features_claimed_significant": [
+      "X1",
+      "X3",
+      "X2"
+    ],
+    "features_claimed_not_significant": [
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {},
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": false,
+    "methods_used": [
+      "correlation analysis",
+      "exploratory data analysis",
+      "multicollinearity assessment",
+      "forward selection reasoning"
+    ],
+    "confidence_level": "high",
+    "null_finding": false,
+    "proposed_formula": "Y = a*X1 + b*X2 + c*X3",
+    "limitations_mentioned": [
+      "Analysis based on summary statistics and correlation matrices, not raw data",
+      "Cannot directly fit or validate regression models",
+      "Potential for omitted variable bias",
+      "Inference limited by lack of access to full dataset"
+    ],
+    "overall_quality_1_to_5": 3
+  },
+  "scores": {
+    "true_positive_rate": 0.6,
+    "true_positives": [
+      "X1",
+      "X2",
+      "X3"
+    ],
+    "false_positive_rate_noise": 0.0,
+    "false_positives_noise": [],
+    "correlated_feature_confusion_rate": 0.0,
+    "correlated_confused": [],
+    "interaction_detected": false,
+    "coefficient_errors": {},
+    "nonlinearity_detected": false,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": false,
+    "methods_used": [
+      "correlation analysis",
+      "exploratory data analysis",
+      "multicollinearity assessment",
+      "forward selection reasoning"
+    ],
+    "limitations_mentioned": [
+      "Analysis based on summary statistics and correlation matrices, not raw data",
+      "Cannot directly fit or validate regression models",
+      "Potential for omitted variable bias",
+      "Inference limited by lack of access to full dataset"
+    ],
+    "overall_quality": 3,
+    "proposed_formula": "Y = a*X1 + b*X2 + c*X3"
+  }
+}

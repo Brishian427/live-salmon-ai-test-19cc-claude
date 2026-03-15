@@ -1,0 +1,75 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{What the Live Salmon Test Reveals}
+\label{sec:interpretation}
+
+Our results paint a nuanced picture of \aiscientist capabilities.
+On one hand, these systems are statistically conservative and competent at standard analysis: they reliably detect strong linear effects, never hallucinate significance on null data, and consistently apply multiple comparisons corrections.
+On the other hand, they exhibit a systematic blind spot for nonlinear structure, applying the same correlation-to-regression pipeline regardless of whether it is sufficient for the data at hand.
+
+The 0\% interaction detection rate is particularly informative because it is not a failure of statistical power.
+The $X_4 \times X_5$ interaction has a coefficient of 0.8 and contributes 8\% of total variance---a meaningful signal that any analyst who tested for interactions would find.
+The failure is one of \textit{methodology}, not \textit{sensitivity}: \aiscientists do not attempt the analytical steps that would reveal nonlinear relationships.
+This suggests that current \llms lack what we might call ``analytical creativity''---the ability to move beyond default workflows when data characteristics warrant it.
+
+\subsection{Implications for AI-Generated Research}
+\label{sec:implications}
+
+\para{For developers of \aiscientist systems.}
+The bottleneck we identify is not statistical rigor (which is adequate) but analytical breadth.
+Future systems should incorporate systematic model diagnostic steps: residual analysis after initial linear fits, automated interaction screening, and comparison of linear vs.\ nonlinear models.
+These are standard practices in competent data analysis but are absent from the \llm ``default workflow.''
+
+\para{For consumers of AI-generated research.}
+Our results suggest that AI-generated papers should be treated as first-pass linear analyses.
+Nonlinear effects, interaction terms, and complex functional forms may be systematically underreported.
+When the collective \aiscientist literature on a dataset uniformly agrees on a linear model, this consensus may reflect shared methodological limitations rather than genuine evidence for linearity.
+
+\para{For the research community.}
+The live salmon test methodology---providing known-\dgp data and evaluating recovery---is a valuable complement to existing benchmarks.
+While benchmarks like PaperBench \citep{starace2025paperbench} and BLADE \citep{gu2024blade} measure broad research capability, the live salmon test provides a precise, controlled measurement of what specific patterns \aiscientists can and cannot detect.
+We encourage the development of a diverse suite of live salmon tests covering different data types, effect structures, and analytical challenges.
+
+\subsection{Connection to the Dead Salmon Tradition}
+\label{sec:tradition}
+
+Our dead salmon results are the inverse of \citet{bennett2009neural}: where standard fMRI analysis produced false positives on null data, \aiscientists produce zero false positives.
+This difference likely arises because \llms have internalized the lesson of the original dead salmon study---multiple comparisons correction is well-represented in statistical training data and is a ``textbook'' step that \llms reliably reproduce.
+The broader implication is that \llms are well-calibrated for \textit{known} failure modes (false positives from multiple testing) but poorly equipped for \textit{novel} analytical challenges (detecting unexpected nonlinear structure).
+
+This finding parallels \citet{meloux2025dead}, who showed that AI interpretability tools produce plausible explanations for random networks.
+Both results highlight that AI analytical pipelines can be simultaneously conservative in some respects and blind in others---a pattern that is harder to diagnose than simple unreliability.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+Our study has several limitations that should be considered when interpreting the results.
+
+\para{Data delivery format.}
+We provide summary statistics rather than raw data, and models cannot execute code.
+Full \aiscientist systems like The AI Scientist \citep{lu2024ai} can write and run analysis code, which might enable more diverse methods.
+However, the summary statistics we provide are sufficient for a competent analyst to suspect nonlinear structure (\eg by noting that $R^2$ is well below 1.0 after accounting for linear terms).
+
+\para{Prompt design.}
+Our prompt asks for general analysis without specifically mentioning interactions.
+A more directive prompt (\eg ``check for interaction effects'') might change results.
+This is by design: we test whether \aiscientists independently identify the need for interaction screening, which is the capability gap we aim to measure.
+
+\para{Single-shot paradigm.}
+Real \aiscientist systems iterate: they generate hypotheses, run code, examine results, and revise.
+Our single-shot evaluation may underestimate the capability of iterative systems.
+However, single-shot analysis tests the core analytical reasoning that drives the first iteration of any multi-step system.
+
+\para{Evaluation by \llm.}
+We use \gptmodel to extract claims from generated papers, which may introduce parsing errors.
+We mitigate this by using temperature 0 and structured extraction prompts, but human verification of a subset would strengthen confidence.
+
+\para{Limited scale.}
+With 3 models and 3 runs each, we have limited statistical power for cross-model comparisons.
+The core finding (0/9 interaction detection) is robust due to its extreme value, but subtler differences between models require larger samples to assess reliably.
+
+\para{Single \dgp.}
+We test a single data generating process with specific effect sizes and feature correlations.
+The interaction detection failure may vary with different signal-to-noise ratios, interaction types, or data dimensionalities.
+A comprehensive benchmark would include a suite of \dgp{}s spanning diverse analytical challenges.

@@ -1,0 +1,81 @@
+[
+  {
+    "name": "bennett_2009_dead_salmon_fmri",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "meloux_2025_dead_salmons_ai_interpretability",
+    "arxiv_id": "2512.18792",
+    "pdf_url": "",
+    "title": "The Dead Salmons of AI Interpretability"
+  },
+  {
+    "name": "lu_2024_ai_scientist",
+    "arxiv_id": "2408.06292",
+    "pdf_url": "",
+    "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery"
+  },
+  {
+    "name": "starace_2025_paperbench",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "gu_2024_blade",
+    "arxiv_id": "2408.09667",
+    "pdf_url": "",
+    "title": "BLADE: Benchmarking Language Model Agents for Data-Driven Science"
+  },
+  {
+    "name": "si_2024_llm_novel_ideas",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "weng_2024_cycleresearcher",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "chen_2024_scienceagentbench",
+    "arxiv_id": "2410.05080",
+    "pdf_url": "",
+    "title": "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery"
+  },
+  {
+    "name": "yamada_2024_autonomous_llm_research",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "huang_2025_ai_scientists_fail",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "fournier_2025_evaluating_ai_scientist",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "fang_2025_more_automate_less_see",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "eklund_2016_cluster_failure_fmri",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "emmert_2019_multiple_testing",
+    "arxiv_id": null,
+    "pdf_url": null
+  },
+  {
+    "name": "schmidgall_2024_agent_laboratory",
+    "arxiv_id": null,
+    "pdf_url": null
+  }
+]

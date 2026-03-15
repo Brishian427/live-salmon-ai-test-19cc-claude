@@ -1,0 +1,11 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We introduced the \livesalmon, a controlled evaluation of \aiscientist systems against a known data generating process.
+Our results show that frontier \llms acting as data scientists are competent at standard linear analysis---detecting strong predictors in 100\% of papers and correctly reporting null findings on control data with zero false positives---but universally fail to detect a multiplicative interaction term that accounts for 8\% of total variance (0/9 papers).
+This failure stems not from insufficient statistical sensitivity but from methodological narrowness: all models converge on the same correlation-to-regression pipeline without attempting the diagnostic steps that would reveal nonlinear structure.
+
+The key takeaway is that current \aiscientists are reliable first-pass analysts but should not be trusted to characterize complex data generating processes.
+The collective AI scientific literature they produce would systematically misrepresent nonlinear relationships as absent, creating a misleading consensus rooted in shared methodological limitations rather than genuine evidence.
+
+Future work should extend the live salmon test to diverse \dgp{}s (varying interaction types, effect sizes, and data modalities), evaluate iterative \aiscientist systems with code execution capability, and investigate whether targeted prompting or fine-tuning on statistical methodology can close the analytical creativity gap we identify.

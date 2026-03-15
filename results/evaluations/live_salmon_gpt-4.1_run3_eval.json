@@ -1,0 +1,102 @@
+{
+  "cache_key": "live_salmon_gpt-4.1_run3",
+  "model_name": "gpt-4.1",
+  "dataset": "live_salmon",
+  "run_id": 3,
+  "claims": {
+    "features_claimed_significant": [
+      "X1",
+      "X3",
+      "X2",
+      "X17"
+    ],
+    "features_claimed_not_significant": [
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {
+      "X1": 1.1,
+      "X3": -0.9,
+      "X2": 0.15,
+      "X17": 0.1
+    },
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "linear regression",
+      "assessment of multicollinearity",
+      "exploration of nonlinearities",
+      "exploration of interactions",
+      "multiple comparisons adjustment"
+    ],
+    "confidence_level": "high",
+    "null_finding": false,
+    "proposed_formula": "Y \u2248 a * X1 + b * X3 + c * X2 + noise, where a \u2248 1, b \u2248 -1, c \u2248 0.1\u20130.2",
+    "limitations_mentioned": [
+      "Severe collinearity between X1/X16 and X3/X18 inflates standard errors and makes precise estimation of individual effects difficult.",
+      "Only one from each collinear pair should be interpreted as the true underlying driver.",
+      "No nonlinear or interaction relationships were observed, but the analysis was limited to pairwise and quadratic terms; more complex nonlinearities could exist but were not detected.",
+      "All features were used as provided; latent variable structure (e.g., principal components) was not explored.",
+      "Results are specific to this dataset and may not generalize beyond the sampled population.",
+      "The true process may include latent or omitted variables not captured in the provided features."
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "true_positive_rate": 0.6,
+    "true_positives": [
+      "X1",
+      "X2",
+      "X3"
+    ],
+    "false_positive_rate_noise": 0.0,
+    "false_positives_noise": [],
+    "correlated_feature_confusion_rate": 0.2,
+    "correlated_confused": [
+      "X17"
+    ],
+    "interaction_detected": false,
+    "coefficient_errors": {
+      "X1": 0.8999999999999999,
+      "X2": 0.35,
+      "X3": 0.6
+    },
+    "mean_coefficient_error": 0.6166666666666666,
+    "nonlinearity_detected": false,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "linear regression",
+      "assessment of multicollinearity",
+      "exploration of nonlinearities",
+      "exploration of interactions",
+      "multiple comparisons adjustment"
+    ],
+    "limitations_mentioned": [
+      "Severe collinearity between X1/X16 and X3/X18 inflates standard errors and makes precise estimation of individual effects difficult.",
+      "Only one from each collinear pair should be interpreted as the true underlying driver.",
+      "No nonlinear or interaction relationships were observed, but the analysis was limited to pairwise and quadratic terms; more complex nonlinearities could exist but were not detected.",
+      "All features were used as provided; latent variable structure (e.g., principal components) was not explored.",
+      "Results are specific to this dataset and may not generalize beyond the sampled population.",
+      "The true process may include latent or omitted variables not captured in the provided features."
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y \u2248 a * X1 + b * X3 + c * X2 + noise, where a \u2248 1, b \u2248 -1, c \u2248 0.1\u20130.2"
+  }
+}

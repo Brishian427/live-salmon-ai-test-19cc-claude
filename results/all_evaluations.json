@@ -1,0 +1,1569 @@
+[
+  {
+    "cache_key": "live_salmon_gpt-4.1_run1",
+    "model_name": "gpt-4.1",
+    "dataset": "live_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 2.0,
+        "X3": -1.8
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "linear regression",
+        "stepwise selection",
+        "variance inflation factor",
+        "Bonferroni correction",
+        "residual analysis"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y = 2.0*X1 - 1.8*X3",
+      "limitations_mentioned": [
+        "Analysis relies on summary statistics and not the full raw data, so regression coefficients are approximate.",
+        "High collinearity between some predictors inflates uncertainty in individual coefficients; coefficients should be interpreted as representing shared variance rather than unique effects.",
+        "Only linear and simple quadratic/interaction forms were tested; more complex nonlinearities could exist but are undetectable with the current data and summary statistics.",
+        "Feature selection may be overoptimistic if the sample is not representative of future data."
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.4,
+      "true_positives": [
+        "X1",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.0,
+        "X3": 0.30000000000000004
+      },
+      "mean_coefficient_error": 0.15000000000000002,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "linear regression",
+        "stepwise selection",
+        "variance inflation factor",
+        "Bonferroni correction",
+        "residual analysis"
+      ],
+      "limitations_mentioned": [
+        "Analysis relies on summary statistics and not the full raw data, so regression coefficients are approximate.",
+        "High collinearity between some predictors inflates uncertainty in individual coefficients; coefficients should be interpreted as representing shared variance rather than unique effects.",
+        "Only linear and simple quadratic/interaction forms were tested; more complex nonlinearities could exist but are undetectable with the current data and summary statistics.",
+        "Feature selection may be overoptimistic if the sample is not representative of future data."
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = 2.0*X1 - 1.8*X3"
+    }
+  },
+  {
+    "cache_key": "live_salmon_gpt-4.1_run2",
+    "model_name": "gpt-4.1",
+    "dataset": "live_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.56,
+        "X3": -1.1,
+        "X2": 0.16
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "exploratory statistics",
+        "correlation analysis",
+        "multivariate linear regression",
+        "collinearity diagnostics",
+        "nonlinearity and interaction detection",
+        "multiple comparison correction"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y = \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2082\u00b7X3 + \u03b2\u2083\u00b7X2 + \u03b5",
+      "limitations_mentioned": [
+        "The analysis assumes linearity; subtle nonlinearities may go undetected given the sample size.",
+        "In choosing between highly correlated features, there is some arbitrariness; alternative selection might yield similar results.",
+        "Findings are strictly limited to this dataset; external validity is not established.",
+        "Bonferroni is conservative; weaker effects (e.g., X2) may be real but not pass this stringent threshold.",
+        "Only observed features are analyzed; hidden variables may influence results."
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.43999999999999995,
+        "X2": 0.33999999999999997,
+        "X3": 0.3999999999999999
+      },
+      "mean_coefficient_error": 0.39333333333333326,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "exploratory statistics",
+        "correlation analysis",
+        "multivariate linear regression",
+        "collinearity diagnostics",
+        "nonlinearity and interaction detection",
+        "multiple comparison correction"
+      ],
+      "limitations_mentioned": [
+        "The analysis assumes linearity; subtle nonlinearities may go undetected given the sample size.",
+        "In choosing between highly correlated features, there is some arbitrariness; alternative selection might yield similar results.",
+        "Findings are strictly limited to this dataset; external validity is not established.",
+        "Bonferroni is conservative; weaker effects (e.g., X2) may be real but not pass this stringent threshold.",
+        "Only observed features are analyzed; hidden variables may influence results."
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2082\u00b7X3 + \u03b2\u2083\u00b7X2 + \u03b5"
+    }
+  },
+  {
+    "cache_key": "live_salmon_gpt-4.1_run3",
+    "model_name": "gpt-4.1",
+    "dataset": "live_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2",
+        "X17"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.1,
+        "X3": -0.9,
+        "X2": 0.15,
+        "X17": 0.1
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "linear regression",
+        "assessment of multicollinearity",
+        "exploration of nonlinearities",
+        "exploration of interactions",
+        "multiple comparisons adjustment"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y \u2248 a * X1 + b * X3 + c * X2 + noise, where a \u2248 1, b \u2248 -1, c \u2248 0.1\u20130.2",
+      "limitations_mentioned": [
+        "Severe collinearity between X1/X16 and X3/X18 inflates standard errors and makes precise estimation of individual effects difficult.",
+        "Only one from each collinear pair should be interpreted as the true underlying driver.",
+        "No nonlinear or interaction relationships were observed, but the analysis was limited to pairwise and quadratic terms; more complex nonlinearities could exist but were not detected.",
+        "All features were used as provided; latent variable structure (e.g., principal components) was not explored.",
+        "Results are specific to this dataset and may not generalize beyond the sampled population.",
+        "The true process may include latent or omitted variables not captured in the provided features."
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.2,
+      "correlated_confused": [
+        "X17"
+      ],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.8999999999999999,
+        "X2": 0.35,
+        "X3": 0.6
+      },
+      "mean_coefficient_error": 0.6166666666666666,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "linear regression",
+        "assessment of multicollinearity",
+        "exploration of nonlinearities",
+        "exploration of interactions",
+        "multiple comparisons adjustment"
+      ],
+      "limitations_mentioned": [
+        "Severe collinearity between X1/X16 and X3/X18 inflates standard errors and makes precise estimation of individual effects difficult.",
+        "Only one from each collinear pair should be interpreted as the true underlying driver.",
+        "No nonlinear or interaction relationships were observed, but the analysis was limited to pairwise and quadratic terms; more complex nonlinearities could exist but were not detected.",
+        "All features were used as provided; latent variable structure (e.g., principal components) was not explored.",
+        "Results are specific to this dataset and may not generalize beyond the sampled population.",
+        "The true process may include latent or omitted variables not captured in the provided features."
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y \u2248 a * X1 + b * X3 + c * X2 + noise, where a \u2248 1, b \u2248 -1, c \u2248 0.1\u20130.2"
+    }
+  },
+  {
+    "cache_key": "live_salmon_claude-sonnet-4.5_run1",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "live_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.85,
+        "X3": -1.5,
+        "X2": 0.48
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "Bonferroni correction",
+        "false discovery rate",
+        "multicollinearity assessment",
+        "effect size estimation"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2083\u00b7X3 + \u03b5",
+      "limitations_mentioned": [
+        "Correlation vs. Causation",
+        "Linear Assumption",
+        "Multiple Comparison Burden",
+        "Multicollinearity Interpretation",
+        "Sample Size for Interactions",
+        "Outlier Sensitivity",
+        "Model Specification"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.1499999999999999,
+        "X2": 0.020000000000000018,
+        "X3": 0.0
+      },
+      "mean_coefficient_error": 0.05666666666666664,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "Bonferroni correction",
+        "false discovery rate",
+        "multicollinearity assessment",
+        "effect size estimation"
+      ],
+      "limitations_mentioned": [
+        "Correlation vs. Causation",
+        "Linear Assumption",
+        "Multiple Comparison Burden",
+        "Multicollinearity Interpretation",
+        "Sample Size for Interactions",
+        "Outlier Sensitivity",
+        "Model Specification"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2083\u00b7X3 + \u03b5"
+    }
+  },
+  {
+    "cache_key": "live_salmon_claude-sonnet-4.5_run2",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "live_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.87,
+        "X3": -1.47
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "effect size evaluation",
+        "multiple comparison correction",
+        "variance explained"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y = -0.145 + 1.87*X1 - 1.47*X3 + noise",
+      "limitations_mentioned": [
+        "Sample Size: n=1000 may miss subtle nonlinear or interaction effects",
+        "Linear Assumptions: Only linear relationships assessed",
+        "Multiple Comparisons: Risk of Type I errors despite correction",
+        "Collinearity Complications: Hard to partition variance between collinear features",
+        "Causality: Correlation does not imply causation",
+        "Interaction Detection: Limited power to detect interactions",
+        "Distributional Assumptions: Pearson correlation assumes bivariate normality",
+        "Model Specification: Only additive linear effects considered",
+        "Generalizability: Results specific to this dataset",
+        "Feature Engineering: Only raw features analyzed",
+        "Overfitting Risk: Complex models could overfit"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.4,
+      "true_positives": [
+        "X1",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.1299999999999999,
+        "X3": 0.030000000000000027
+      },
+      "mean_coefficient_error": 0.07999999999999996,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "effect size evaluation",
+        "multiple comparison correction",
+        "variance explained"
+      ],
+      "limitations_mentioned": [
+        "Sample Size: n=1000 may miss subtle nonlinear or interaction effects",
+        "Linear Assumptions: Only linear relationships assessed",
+        "Multiple Comparisons: Risk of Type I errors despite correction",
+        "Collinearity Complications: Hard to partition variance between collinear features",
+        "Causality: Correlation does not imply causation",
+        "Interaction Detection: Limited power to detect interactions",
+        "Distributional Assumptions: Pearson correlation assumes bivariate normality",
+        "Model Specification: Only additive linear effects considered",
+        "Generalizability: Results specific to this dataset",
+        "Feature Engineering: Only raw features analyzed",
+        "Overfitting Risk: Complex models could overfit"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = -0.145 + 1.87*X1 - 1.47*X3 + noise"
+    }
+  },
+  {
+    "cache_key": "live_salmon_claude-sonnet-4.5_run3",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "live_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X16",
+        "X3",
+        "X18",
+        "X2",
+        "X17"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.8,
+        "X3": -1.5
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "univariate analysis",
+        "multicollinearity assessment"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081(X1) + \u03b2\u2082(X3) + \u03b5",
+      "limitations_mentioned": [
+        "Multicollinearity confounding",
+        "Linear assumption",
+        "Correlation vs. causation",
+        "Bivariate analysis limitations",
+        "Multiple comparisons",
+        "Sample specificity",
+        "Missing interaction tests"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.6,
+      "correlated_confused": [
+        "X16",
+        "X17",
+        "X18"
+      ],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.19999999999999996,
+        "X3": 0.0
+      },
+      "mean_coefficient_error": 0.09999999999999998,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "univariate analysis",
+        "multicollinearity assessment"
+      ],
+      "limitations_mentioned": [
+        "Multicollinearity confounding",
+        "Linear assumption",
+        "Correlation vs. causation",
+        "Bivariate analysis limitations",
+        "Multiple comparisons",
+        "Sample specificity",
+        "Missing interaction tests"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081(X1) + \u03b2\u2082(X3) + \u03b5"
+    }
+  },
+  {
+    "cache_key": "live_salmon_gemini-2.5-pro_run1",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "live_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.9,
+        "X3": -1.5,
+        "X2": 0.5
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multiple comparison correction",
+        "multicollinearity analysis",
+        "linear regression (approximate)"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y \u2248 1.9*X1 - 1.5*X3 + 0.5*X2",
+      "limitations_mentioned": [
+        "Analysis restricted to summary statistics, not raw data",
+        "Could not directly fit machine learning models or test their assumptions"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.10000000000000009,
+        "X2": 0.0,
+        "X3": 0.0
+      },
+      "mean_coefficient_error": 0.03333333333333336,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multiple comparison correction",
+        "multicollinearity analysis",
+        "linear regression (approximate)"
+      ],
+      "limitations_mentioned": [
+        "Analysis restricted to summary statistics, not raw data",
+        "Could not directly fit machine learning models or test their assumptions"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y \u2248 1.9*X1 - 1.5*X3 + 0.5*X2"
+    }
+  },
+  {
+    "cache_key": "live_salmon_gemini-2.5-pro_run2",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "live_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2",
+        "X16",
+        "X18",
+        "X17"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 1.87
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "linear regression (univariate, estimated)"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y \u2248 1.87*X1 + \u03b22*X2 + \u03b23*X3",
+      "limitations_mentioned": [
+        "No raw data for model fitting",
+        "Effect sizes are first-order approximations",
+        "No fitted multiple regression model"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.6,
+      "correlated_confused": [
+        "X16",
+        "X17",
+        "X18"
+      ],
+      "interaction_detected": false,
+      "coefficient_errors": {
+        "X1": 0.1299999999999999
+      },
+      "mean_coefficient_error": 0.1299999999999999,
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "linear regression (univariate, estimated)"
+      ],
+      "limitations_mentioned": [
+        "No raw data for model fitting",
+        "Effect sizes are first-order approximations",
+        "No fitted multiple regression model"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y \u2248 1.87*X1 + \u03b22*X2 + \u03b23*X3"
+    }
+  },
+  {
+    "cache_key": "live_salmon_gemini-2.5-pro_run3",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "live_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [
+        "X1",
+        "X3",
+        "X2"
+      ],
+      "features_claimed_not_significant": [
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": false,
+      "methods_used": [
+        "correlation analysis",
+        "exploratory data analysis",
+        "multicollinearity assessment",
+        "forward selection reasoning"
+      ],
+      "confidence_level": "high",
+      "null_finding": false,
+      "proposed_formula": "Y = a*X1 + b*X2 + c*X3",
+      "limitations_mentioned": [
+        "Analysis based on summary statistics and correlation matrices, not raw data",
+        "Cannot directly fit or validate regression models",
+        "Potential for omitted variable bias",
+        "Inference limited by lack of access to full dataset"
+      ],
+      "overall_quality_1_to_5": 3
+    },
+    "scores": {
+      "true_positive_rate": 0.6,
+      "true_positives": [
+        "X1",
+        "X2",
+        "X3"
+      ],
+      "false_positive_rate_noise": 0.0,
+      "false_positives_noise": [],
+      "correlated_feature_confusion_rate": 0.0,
+      "correlated_confused": [],
+      "interaction_detected": false,
+      "coefficient_errors": {},
+      "nonlinearity_detected": false,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": false,
+      "methods_used": [
+        "correlation analysis",
+        "exploratory data analysis",
+        "multicollinearity assessment",
+        "forward selection reasoning"
+      ],
+      "limitations_mentioned": [
+        "Analysis based on summary statistics and correlation matrices, not raw data",
+        "Cannot directly fit or validate regression models",
+        "Potential for omitted variable bias",
+        "Inference limited by lack of access to full dataset"
+      ],
+      "overall_quality": 3,
+      "proposed_formula": "Y = a*X1 + b*X2 + c*X3"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gpt-4.1_run1",
+    "model_name": "gpt-4.1",
+    "dataset": "dead_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "summary statistics",
+        "correlation analysis",
+        "linear regression"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y = noise (no predictive features identified)",
+      "limitations_mentioned": [
+        "Analysis restricted to summary statistics",
+        "Potential for small nonlinear or higher-order effects",
+        "Unseen confounders",
+        "Multiple comparisons correction may miss weak effects",
+        "Assumption of linearity"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "summary statistics",
+        "correlation analysis",
+        "linear regression"
+      ],
+      "limitations_mentioned": [
+        "Analysis restricted to summary statistics",
+        "Potential for small nonlinear or higher-order effects",
+        "Unseen confounders",
+        "Multiple comparisons correction may miss weak effects",
+        "Assumption of linearity"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = noise (no predictive features identified)"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gpt-4.1_run2",
+    "model_name": "gpt-4.1",
+    "dataset": "dead_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multiple linear regression",
+        "interaction analysis",
+        "nonlinear effects analysis",
+        "multicollinearity diagnostics",
+        "multiple comparisons correction"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y = noise",
+      "limitations_mentioned": [
+        "Access to Raw Data",
+        "Nonlinear/Complex Effects",
+        "Power for Small Effects",
+        "Multiple Comparisons",
+        "Generality"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multiple linear regression",
+        "interaction analysis",
+        "nonlinear effects analysis",
+        "multicollinearity diagnostics",
+        "multiple comparisons correction"
+      ],
+      "limitations_mentioned": [
+        "Access to Raw Data",
+        "Nonlinear/Complex Effects",
+        "Power for Small Effects",
+        "Multiple Comparisons",
+        "Generality"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = noise"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gpt-4.1_run3",
+    "model_name": "gpt-4.1",
+    "dataset": "dead_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {
+        "X1": 0.04,
+        "X2": 0.0,
+        "X3": 0.06,
+        "X4": 0.0,
+        "X5": 0.0,
+        "X6": 0.0,
+        "X7": 0.0,
+        "X8": 0.0,
+        "X9": 0.0,
+        "X10": 0.0,
+        "X11": -0.08,
+        "X12": 0.0,
+        "X13": -0.077,
+        "X14": 0.0,
+        "X15": 0.0,
+        "X16": 0.0,
+        "X17": 0.0,
+        "X18": 0.05,
+        "X19": 0.0,
+        "X20": 0.0
+      },
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "descriptive statistics",
+        "correlation analysis",
+        "collinearity assessment",
+        "linear regression",
+        "significance testing",
+        "multiple comparisons correction",
+        "interaction and nonlinearity search",
+        "model fit assessment",
+        "robustness checks"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y = 0 + 0.04*X1 + 0.00*X2 + 0.06*X3 + 0.00*X4 + 0.00*X5 + 0.00*X6 + 0.00*X7 + 0.00*X8 + 0.00*X9 + 0.00*X10 - 0.08*X11 + 0.00*X12 - 0.077*X13 + 0.00*X14 + 0.00*X15 + 0.00*X16 + 0.00*X17 + 0.05*X18 + 0.00*X19 + 0.00*X20",
+      "limitations_mentioned": [
+        "Statistical Power: While n=1000 is large, very small effects (e.g., |r| \u2248 0.05) might go undetected, but such effects would be of doubtful practical value.",
+        "Linear/Polynomial Framework: We tested only linear, quadratic, and pairwise interaction forms. Highly nonlinear or combinatorial relationships (not tested) could exist, but there is no hint of such structure in the data.",
+        "Unmeasured Confounders: If Y is driven by variables not included in the dataset, we would not detect such relationships.",
+        "Summary Data Basis: Our analysis is based on provided summary statistics and correlation matrices; full modeling on raw data could confirm these findings, but the evidence from summary stats is compelling."
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "descriptive statistics",
+        "correlation analysis",
+        "collinearity assessment",
+        "linear regression",
+        "significance testing",
+        "multiple comparisons correction",
+        "interaction and nonlinearity search",
+        "model fit assessment",
+        "robustness checks"
+      ],
+      "limitations_mentioned": [
+        "Statistical Power: While n=1000 is large, very small effects (e.g., |r| \u2248 0.05) might go undetected, but such effects would be of doubtful practical value.",
+        "Linear/Polynomial Framework: We tested only linear, quadratic, and pairwise interaction forms. Highly nonlinear or combinatorial relationships (not tested) could exist, but there is no hint of such structure in the data.",
+        "Unmeasured Confounders: If Y is driven by variables not included in the dataset, we would not detect such relationships.",
+        "Summary Data Basis: Our analysis is based on provided summary statistics and correlation matrices; full modeling on raw data could confirm these findings, but the evidence from summary stats is compelling."
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = 0 + 0.04*X1 + 0.00*X2 + 0.06*X3 + 0.00*X4 + 0.00*X5 + 0.00*X6 + 0.00*X7 + 0.00*X8 + 0.00*X9 + 0.00*X10 - 0.08*X11 + 0.00*X12 - 0.077*X13 + 0.00*X14 + 0.00*X15 + 0.00*X16 + 0.00*X17 + 0.05*X18 + 0.00*X19 + 0.00*X20"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_claude-sonnet-4.5_run1",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "dead_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "multiple testing correction",
+        "effect size evaluation"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y ~ N(0, 1) + \u03b5 or Y ~ f(X1, ..., X20) + \u03b5 (where f is unknown and possibly nonlinear)",
+      "limitations_mentioned": [
+        "Analysis relied on summary statistics, not raw data",
+        "Unable to fit regression models with multiple predictors",
+        "Unable to test for nonlinear relationships",
+        "Unable to examine interaction effects systematically",
+        "Unable to conduct diagnostic checks for outliers or influential observations",
+        "Unable to apply machine learning methods",
+        "Linear assumptions of correlation analysis",
+        "Multiple testing correction may be overly conservative due to correlated features",
+        "Sample size may be insufficient for detecting very small or complex effects",
+        "Lack of domain knowledge about features",
+        "Unknown data generating mechanism",
+        "No information about measurement error"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "multiple testing correction",
+        "effect size evaluation"
+      ],
+      "limitations_mentioned": [
+        "Analysis relied on summary statistics, not raw data",
+        "Unable to fit regression models with multiple predictors",
+        "Unable to test for nonlinear relationships",
+        "Unable to examine interaction effects systematically",
+        "Unable to conduct diagnostic checks for outliers or influential observations",
+        "Unable to apply machine learning methods",
+        "Linear assumptions of correlation analysis",
+        "Multiple testing correction may be overly conservative due to correlated features",
+        "Sample size may be insufficient for detecting very small or complex effects",
+        "Lack of domain knowledge about features",
+        "Unknown data generating mechanism",
+        "No information about measurement error"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y ~ N(0, 1) + \u03b5 or Y ~ f(X1, ..., X20) + \u03b5 (where f is unknown and possibly nonlinear)"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_claude-sonnet-4.5_run2",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "dead_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity diagnostics",
+        "effect size estimation",
+        "power analysis",
+        "scatter plot inspection"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y ~ N(0, 1) + \u03b5",
+      "limitations_mentioned": [
+        "Multiple testing",
+        "Linear assumptions",
+        "Model specification (not all interactions tested)",
+        "Sample size may miss very weak effects",
+        "Assumed perfect data quality",
+        "Generalizability limited to this dataset"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity diagnostics",
+        "effect size estimation",
+        "power analysis",
+        "scatter plot inspection"
+      ],
+      "limitations_mentioned": [
+        "Multiple testing",
+        "Linear assumptions",
+        "Model specification (not all interactions tested)",
+        "Sample size may miss very weak effects",
+        "Assumed perfect data quality",
+        "Generalizability limited to this dataset"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y ~ N(0, 1) + \u03b5"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_claude-sonnet-4.5_run3",
+    "model_name": "claude-sonnet-4.5",
+    "dataset": "dead_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "statistical inference",
+        "effect size estimation",
+        "statistical power analysis"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y is independent of X1-X20",
+      "limitations_mentioned": [
+        "Linear assumption",
+        "Interaction effects not systematically tested",
+        "Multiple collinearity reduces effective sample size",
+        "Sample size may not detect very small effects",
+        "Distributional assumptions may not hold perfectly",
+        "Model specification does not include nonlinear terms",
+        "Outlier influence not fully assessed"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "correlation analysis",
+        "multicollinearity assessment",
+        "statistical inference",
+        "effect size estimation",
+        "statistical power analysis"
+      ],
+      "limitations_mentioned": [
+        "Linear assumption",
+        "Interaction effects not systematically tested",
+        "Multiple collinearity reduces effective sample size",
+        "Sample size may not detect very small effects",
+        "Distributional assumptions may not hold perfectly",
+        "Model specification does not include nonlinear terms",
+        "Outlier influence not fully assessed"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y is independent of X1-X20"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gemini-2.5-pro_run1",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "dead_salmon",
+    "run_id": 1,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "multiple linear regression",
+        "multicollinearity diagnostics",
+        "Lasso regression"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "Y = intercept",
+      "limitations_mentioned": [
+        "No further tests for nonlinearity or interactions could be performed due to lack of data access",
+        "Analysis is based on summary statistics, not raw data"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "multiple linear regression",
+        "multicollinearity diagnostics",
+        "Lasso regression"
+      ],
+      "limitations_mentioned": [
+        "No further tests for nonlinearity or interactions could be performed due to lack of data access",
+        "Analysis is based on summary statistics, not raw data"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": "Y = intercept"
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gemini-2.5-pro_run2",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "dead_salmon",
+    "run_id": 2,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "linear regression",
+        "lasso regression",
+        "multiple comparisons correction"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "",
+      "limitations_mentioned": [
+        "severe multicollinearity among features",
+        "weak univariate correlations",
+        "target variable likely random noise"
+      ],
+      "overall_quality_1_to_5": 3
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "linear regression",
+        "lasso regression",
+        "multiple comparisons correction"
+      ],
+      "limitations_mentioned": [
+        "severe multicollinearity among features",
+        "weak univariate correlations",
+        "target variable likely random noise"
+      ],
+      "overall_quality": 3,
+      "proposed_formula": ""
+    }
+  },
+  {
+    "cache_key": "dead_salmon_gemini-2.5-pro_run3",
+    "model_name": "gemini-2.5-pro",
+    "dataset": "dead_salmon",
+    "run_id": 3,
+    "claims": {
+      "features_claimed_significant": [],
+      "features_claimed_not_significant": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "X9",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20"
+      ],
+      "estimated_coefficients": {},
+      "interaction_terms_detected": [],
+      "nonlinearity_detected": false,
+      "multiple_comparisons_correction_mentioned": true,
+      "multiple_comparisons_correction_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "hypothesis testing",
+        "multicollinearity assessment"
+      ],
+      "confidence_level": "high",
+      "null_finding": true,
+      "proposed_formula": "",
+      "limitations_mentioned": [
+        "Analysis confined to linear relationships",
+        "Cannot formally test for non-linearities or interaction effects due to unavailability of raw dataset"
+      ],
+      "overall_quality_1_to_5": 4
+    },
+    "scores": {
+      "false_positives_total": 0,
+      "false_positives_list": [],
+      "null_finding_reported": true,
+      "multiple_comparisons_mentioned": true,
+      "multiple_comparisons_applied": true,
+      "methods_used": [
+        "exploratory data analysis",
+        "correlation analysis",
+        "hypothesis testing",
+        "multicollinearity assessment"
+      ],
+      "limitations_mentioned": [
+        "Analysis confined to linear relationships",
+        "Cannot formally test for non-linearities or interaction effects due to unavailability of raw dataset"
+      ],
+      "overall_quality": 4,
+      "proposed_formula": ""
+    }
+  }
+]

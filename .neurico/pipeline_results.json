@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/live-salmon-ai-test-19cc-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/live-salmon-ai-test-19cc-claude/literature_review.md",
+        "resources_catalog": "/workspaces/live-salmon-ai-test-19cc-claude/resources.md",
+        "papers_dir": "/workspaces/live-salmon-ai-test-19cc-claude/papers",
+        "datasets_dir": "/workspaces/live-salmon-ai-test-19cc-claude/datasets",
+        "code_dir": "/workspaces/live-salmon-ai-test-19cc-claude/code"
+      },
+      "log_file": "/workspaces/live-salmon-ai-test-19cc-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/live-salmon-ai-test-19cc-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1251.4031670093536
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 1243.036113023758,
+      "log_file": "/workspaces/live-salmon-ai-test-19cc-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/live-salmon-ai-test-19cc-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/live-salmon-ai-test-19cc-claude"
+}

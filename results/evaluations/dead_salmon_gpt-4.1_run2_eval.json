@@ -1,0 +1,79 @@
+{
+  "cache_key": "dead_salmon_gpt-4.1_run2",
+  "model_name": "gpt-4.1",
+  "dataset": "dead_salmon",
+  "run_id": 2,
+  "claims": {
+    "features_claimed_significant": [],
+    "features_claimed_not_significant": [
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {},
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multiple linear regression",
+      "interaction analysis",
+      "nonlinear effects analysis",
+      "multicollinearity diagnostics",
+      "multiple comparisons correction"
+    ],
+    "confidence_level": "high",
+    "null_finding": true,
+    "proposed_formula": "Y = noise",
+    "limitations_mentioned": [
+      "Access to Raw Data",
+      "Nonlinear/Complex Effects",
+      "Power for Small Effects",
+      "Multiple Comparisons",
+      "Generality"
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "false_positives_total": 0,
+    "false_positives_list": [],
+    "null_finding_reported": true,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multiple linear regression",
+      "interaction analysis",
+      "nonlinear effects analysis",
+      "multicollinearity diagnostics",
+      "multiple comparisons correction"
+    ],
+    "limitations_mentioned": [
+      "Access to Raw Data",
+      "Nonlinear/Complex Effects",
+      "Power for Small Effects",
+      "Multiple Comparisons",
+      "Generality"
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y = noise"
+  }
+}

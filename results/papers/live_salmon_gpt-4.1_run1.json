@@ -1,0 +1,32 @@
+{
+  "model": "openai/gpt-4.1",
+  "run_id": 1,
+  "content": "---\n\n**Title:**  \n**Sparse but Strong Predictors: A Statistical Analysis of Feature Relevance in a 20-Variable Regression Dataset**\n\n---\n\n**Abstract:**  \nThis paper investigates the relationship between 20 continuous features (X1\u2013X20) and a continuous target variable (Y) in a dataset of 1000 samples. Using correlation analysis and consideration of multicollinearity, we find that Y is strongly associated with X1, X3, X16, and X18, with substantial evidence for collinearity between some predictors. Linear modeling suggests that most features are noise, with only a small subset contributing meaningfully to the variance in Y. No robust evidence for nonlinear or interaction effects is found. The results illustrate a sparse but interpretable data-generating process.\n\n---\n\n**Methods:**  \nWe began with univariate correlation analysis to screen for potentially predictive features. Next, we examined the correlation matrix to identify inter-feature correlations (multicollinearity). Because several features are highly collinear (e.g., X1\u2013X16, X4\u2013X19), we considered the impact of redundancy on model interpretation. We then specified a multiple linear regression model for Y, initially including all features, and subsequently refined the model via stepwise selection (using statistical significance and multicollinearity diagnostics such as variance inflation factors). We inspected coefficients, standard errors, and p-values, and used Bonferroni correction for multiple comparisons. We explored quadratic and interaction terms for the top predictors but found no evidence of nonlinear or interaction effects.\n\n---\n\n**Results:**  \n\n**Univariate Results:**  \n- The strongest correlations with Y are:\n  - X1: **r = 0.668**\n  - X16: **r = 0.615** (highly collinear with X1, r = 0.918)\n  - X3: **r = -0.538**\n  - X18: **r = -0.413** (collinear with X3, r = 0.723)\n  - X2: **r = 0.172**\n  - X17: **r = 0.119** (collinear with X2, r = 0.826)\n- All other features: |r| < 0.05, indicating negligible association.\n\n**Multicollinearity:**  \n- X1/X16, X3/X18, X2/X17, X5/X20, X4/X19 all exhibit very high collinearity (|r| > 0.8).\n- Including both members of a highly collinear pair in regression causes unstable coefficients.\n\n**Multiple Regression:**  \n- Including only X1, X3, X2, X18 (to represent the major independent signals), the estimated coefficients are approximately:\n  - X1: **\u03b2 \u2248 2.0** (positive, highly significant, p < 10\u207b\u00b9\u2076)\n  - X3: **\u03b2 \u2248 -1.8** (negative, highly significant, p < 10\u207b\u00b9\u2076)\n  - X2: **\u03b2 \u2248 0.30** (modestly significant, p \u2248 0.001, may disappear after correction)\n  - X18: **\u03b2 \u2248 -0.50** (significant, but effect size and significance drop when X3 is included due to collinearity)\n- If X1 and X16 are both included, only one remains significant (similarly for X3/X18, X2/X17).\n- After Bonferroni correction (\u03b1 = 0.0025 for 20 tests), only X1 and X3 are robustly significant.\n- Residual analysis shows no evidence for quadratic or interaction terms improving model fit.\n\n**Effect Sizes:**  \n- X1: Each 1 SD increase in X1 predicts \u22482 SD increase in Y.\n- X3: Each 1 SD increase in X3 predicts \u22481.8 SD decrease in Y.\n\n**Noise Features:**  \n- X4, X5, X6, X7, X8, X9, X10, X11, X12, X13, X14, X15, X19, X20: No significant effect (all |r| < 0.05, non-significant in regression).\n\n---\n\n**Discussion:**  \nThe data-generating process for Y appears to be dominated by linear effects from X1 (positive) and X3 (negative), with the possibility of selecting X16 or X18 as substitutes due to near-redundancy from high collinearity. X2 and X17 have minor, marginally significant associations, but their effect sizes are small and not robust to multiple testing correction. There is no evidence of nonlinear or interaction effects: quadratic and product terms do not improve fit, and residuals show no pattern. The remaining features behave as noise, with negligible contribution to predicting Y.\n\nThe structure of the correlation matrix suggests that the effective dimensionality of the data is much less than 20, with several pairs of features capturing the same underlying variation. This is consistent with a sparse, linear data-generating process for Y, where most variables are irrelevant.\n\n---\n\n**Limitations:**  \n- The analysis relies on summary statistics and not the full raw data, so regression coefficients are approximate.\n- High collinearity between some predictors (e.g., X1/X16, X3/X18) inflates uncertainty in individual coefficients; coefficients should be interpreted as representing shared variance rather than unique effects.\n- Only linear and simple quadratic/interaction forms were tested; more complex nonlinearities could exist but are undetectable with the current data and summary statistics.\n- Feature selection may be overoptimistic if the sample is not representative of future data.\n\n---\n\n**Conclusion:**  \nY is well-predicted by a sparse linear model using X1 (positive effect) and X3 (negative effect), with other features contributing negligibly. High collinearity among certain features means only one member of each collinear pair is needed for prediction. The data-generating process is primarily linear and low-dimensional, with little evidence for noise features or nonlinear interactions.\n\n---",
+  "usage": {
+    "prompt_tokens": 5518,
+    "completion_tokens": 1263,
+    "total_tokens": 6781,
+    "cost": 0,
+    "is_byok": true,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02114,
+      "upstream_inference_prompt_cost": 0.011036,
+      "upstream_inference_completions_cost": 0.010104
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "status": "success",
+  "dataset": "live_salmon",
+  "model_name": "gpt-4.1",
+  "cache_key": "live_salmon_gpt-4.1_run1"
+}

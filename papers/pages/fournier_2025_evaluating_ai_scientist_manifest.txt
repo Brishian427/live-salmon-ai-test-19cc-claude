@@ -1,0 +1,11 @@
+PDF: papers/fournier_2025_evaluating_ai_scientist.pdf
+Total pages: 16
+Pages per chunk: 3
+
+Chunks:
+  fournier_2025_evaluating_ai_scientist_chunk_001.pdf: pages 1-3
+  fournier_2025_evaluating_ai_scientist_chunk_002.pdf: pages 4-6
+  fournier_2025_evaluating_ai_scientist_chunk_003.pdf: pages 7-9
+  fournier_2025_evaluating_ai_scientist_chunk_004.pdf: pages 10-12
+  fournier_2025_evaluating_ai_scientist_chunk_005.pdf: pages 13-15
+  fournier_2025_evaluating_ai_scientist_chunk_006.pdf: page 16

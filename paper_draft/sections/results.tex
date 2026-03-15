@@ -1,0 +1,157 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Aggregate Performance}
+\label{sec:aggregate}
+
+\Tabref{tab:aggregate} summarizes the main results across all 9 live-salmon papers and 9 dead-salmon papers. \aiscientists demonstrate a clear pattern: reliable detection of strong linear effects, complete failure on interaction effects, and appropriate conservatism on null data.
+
+\begin{table}[t]
+    \centering
+    \caption{Aggregate results across all 9 live-salmon and 9 dead-salmon papers. \aiscientists reliably detect strong linear predictors but universally miss the interaction term. Best possible rate in \textbf{bold} where achieved.}
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Metric} & \textbf{Rate} & \textbf{Papers} \\
+        \midrule
+        \multicolumn{3}{@{}l}{\textit{Live salmon: true signal detection}} \\
+        \quad $X_1$ detected (coef = 2.0) & \textbf{100\%} & 9/9 \\
+        \quad $X_3$ detected (coef = $-$1.5) & \textbf{100\%} & 9/9 \\
+        \quad $X_2$ detected (coef = 0.5) & 67\% & 6/9 \\
+        \quad $X_4 \times X_5$ interaction detected & 0\% & 0/9 \\
+        \midrule
+        \multicolumn{3}{@{}l}{\textit{Live salmon: error rates}} \\
+        \quad Noise features falsely included ($X_6$--$X_{15}$) & \textbf{0\%} & 0/9 \\
+        \quad Correlated proxies confused as causal ($X_{16}$--$X_{20}$) & 33\% & 3/9 \\
+        \midrule
+        \multicolumn{3}{@{}l}{\textit{Dead salmon: null findings}} \\
+        \quad Null finding correctly reported & \textbf{100\%} & 9/9 \\
+        \quad False positives & \textbf{0\%} & 0/9 \\
+        \midrule
+        \multicolumn{3}{@{}l}{\textit{Methodological practices (all 18 papers)}} \\
+        \quad Multiple comparisons correction mentioned & \textbf{100\%} & 18/18 \\
+        \quad Correlation analysis used & \textbf{100\%} & 18/18 \\
+        \quad Linear regression used & 89\% & 16/18 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:aggregate}
+\end{table}
+
+\subsection{Linear Effect Detection}
+\label{sec:linear}
+
+All 9 live-salmon papers correctly identify $X_1$ and $X_3$ as significant predictors of $Y$.
+These features have the strongest marginal correlations with $Y$, consistent with their large true coefficients (2.0 and $-1.5$, respectively).
+The weaker predictor $X_2$ (true coefficient 0.5) is detected in only 6 of 9 papers (67\%).
+This gap is expected: $X_2$'s correlation with $Y$ is attenuated by the noise floor, making it harder to distinguish from the noise features $X_6$--$X_{15}$.
+
+Detection is consistent across models for the strong effects but varies for $X_2$: each model misses $X_2$ in exactly one of its three runs, suggesting this is near the detection threshold for single-pass correlation-based analysis.
+
+\subsection{Universal Failure on Interaction Effects}
+\label{sec:interaction}
+
+The most striking result is that \textbf{zero out of 9 papers detect the $X_4 \times X_5$ interaction term}.
+This failure is universal across all three models and all runs.
+The interaction contributes $R^2 = 0.083$ when added to a linear-only model---a meaningful effect.
+For comparison, $X_2$ has a true coefficient of 0.5 and is detected by 67\% of papers, while the interaction coefficient is 0.8---\textit{larger} in magnitude---yet is never found.
+
+The root cause is methodological: all 9 papers rely on correlation analysis and linear regression, both of which are blind to multiplicative interactions between features.
+Detecting $X_4 \times X_5$ would require at least one of: (1) systematic interaction term screening, (2) polynomial feature expansion, (3) residual analysis after linear fitting, (4) tree-based methods, or (5) partial dependence analysis.
+No paper attempts any of these approaches.
+
+\subsection{Comparison to Statistical Baselines}
+\label{sec:baselines}
+
+\Tabref{tab:baselines} compares the \aiscientist results to standard statistical methods applied to the same data.
+
+\begin{table}[t]
+    \centering
+    \caption{Statistical baselines on the live salmon dataset. Standard linear methods also miss the interaction, but it is easily detected when explicitly included. $R^2$ values are cross-validated where applicable.}
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        \textbf{Method} & \textbf{$R^2$} & \textbf{Features Selected} & \textbf{$X_4 \times X_5$?} \\
+        \midrule
+        OLS (all features) & 0.77 & All 20 & No \\
+        \lassobaseline & --- & $X_1, X_2, X_3, X_4$ & No \\
+        OLS + interaction & \textbf{0.85} & $X_1, X_2, X_3, X_4 \times X_5$ & \textbf{Yes} \\
+        Random Forest & 0.73 & $X_1, X_3, X_2, X_{16}, X_5, \ldots$ & Implicitly \\
+        \midrule
+        AI scientists (avg.) & --- & $X_1, X_3$ (100\%); $X_2$ (67\%) & No \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:baselines}
+\end{table}
+
+The \aiscientists perform comparably to \lassobaseline and OLS without interaction terms: both approaches identify the linear predictors but miss the nonlinear structure.
+The key observation is that the interaction is \textit{easy} to detect when tested---the $R^2$ gap from 0.77 to 0.85 is substantial---but no \aiscientist attempts the diagnostic steps that would reveal it.
+A random forest implicitly captures the interaction through recursive partitioning but does not provide an interpretable coefficient.
+
+\subsection{Dead Salmon: Zero False Positives}
+\label{sec:dead_salmon}
+
+All 9 dead-salmon papers correctly report that no features have significant relationships with $Y$.
+Every paper explicitly states null findings, and all mention or apply multiple comparisons corrections (typically Bonferroni).
+This result directly contrasts with \citet{bennett2009neural}, where uncorrected fMRI analysis produced 16 ``significant'' voxels in a dead fish.
+
+The zero false-positive rate suggests that \llms are methodologically conservative: they do not hallucinate statistical significance.
+This is a positive finding for the reliability of AI-generated research, though it also reflects the same correlation-based methodology that causes the interaction detection failure---a method that happens to be conservative by construction.
+
+\subsection{Correlated Feature Confusion}
+\label{sec:proxy}
+
+In 3 of 9 live-salmon papers (33\%), correlated proxy features ($X_{16}$--$X_{20}$) are listed as significant alongside or instead of the true causal features.
+\Tabref{tab:proxy} shows the specific instances.
+
+\begin{table}[t]
+    \centering
+    \caption{Instances of correlated feature confusion. Three papers include proxy features that are correlated with (but not causal for) $Y$.}
+    \begin{tabular}{@{}llp{6cm}@{}}
+        \toprule
+        \textbf{Model} & \textbf{Run} & \textbf{Proxy Features Included} \\
+        \midrule
+        \gptmodel & 3 & $X_{17}$ \\
+        \claudemodel & 3 & $X_{16}, X_{17}, X_{18}$ \\
+        \geminimodel & 2 & $X_{16}, X_{17}, X_{18}$ \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:proxy}
+\end{table}
+
+These papers note the correlations between proxy and true features but fail to conclusively distinguish direct from indirect effects.
+This is a known challenge even for human analysts: without causal reasoning or regularization that penalizes redundant features, correlated proxies are difficult to separate from true predictors based on observational correlations alone.
+
+\subsection{Coefficient Estimation Accuracy}
+\label{sec:coefficients}
+
+When \aiscientists estimate coefficients for the linear terms, their estimates systematically underestimate the true values (\tabref{tab:coef}).
+
+\begin{table}[t]
+    \centering
+    \caption{Coefficient estimation accuracy. \aiscientists systematically underestimate true coefficients, likely due to reliance on univariate correlations rather than multivariate regression.}
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        \textbf{Feature} & \textbf{True Coef.} & \textbf{Mean Estimate} & \textbf{Mean $|$Error$|$} \\
+        \midrule
+        $X_1$ & 2.0 & 1.72 & 0.28 \\
+        $X_2$ & 0.5 & 0.34 & 0.16 \\
+        $X_3$ & $-$1.5 & $-$1.38 & 0.12 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:coef}
+\end{table}
+
+The systematic downward bias is consistent with coefficients derived from univariate correlations rather than multivariate regression.
+Univariate correlations are attenuated by noise features and multicollinearity from the proxy features ($X_{16}$--$X_{20}$), producing lower apparent effect sizes.
+This suggests that even when \aiscientists nominally report running ``regression,'' they may be reasoning from correlation magnitudes rather than fitting a proper multivariate model.
+
+\subsection{Methodological Homogeneity}
+\label{sec:methods}
+
+All 9 live-salmon papers employ essentially the same analytical pipeline:
+(1) pairwise correlation analysis,
+(2) multiple comparisons correction,
+(3) multicollinearity assessment, and
+(4) linear regression or an approximation thereof.
+No paper attempts random forests, gradient boosting, interaction screening, polynomial feature expansion, partial dependence plots, or causal inference methods.
+
+This methodological homogeneity is notable because the three models come from different providers, use different architectures, and were trained on different data.
+Despite this diversity, they converge on a single analytical workflow---suggesting that the ``default'' approach to tabular data analysis is deeply embedded in \llm training data and that these models lack the metacognitive capability to recognize when standard approaches are insufficient.

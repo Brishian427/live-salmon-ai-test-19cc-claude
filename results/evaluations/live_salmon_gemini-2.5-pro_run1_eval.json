@@ -1,0 +1,89 @@
+{
+  "cache_key": "live_salmon_gemini-2.5-pro_run1",
+  "model_name": "gemini-2.5-pro",
+  "dataset": "live_salmon",
+  "run_id": 1,
+  "claims": {
+    "features_claimed_significant": [
+      "X1",
+      "X3",
+      "X2"
+    ],
+    "features_claimed_not_significant": [
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {
+      "X1": 1.9,
+      "X3": -1.5,
+      "X2": 0.5
+    },
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multiple comparison correction",
+      "multicollinearity analysis",
+      "linear regression (approximate)"
+    ],
+    "confidence_level": "high",
+    "null_finding": false,
+    "proposed_formula": "Y \u2248 1.9*X1 - 1.5*X3 + 0.5*X2",
+    "limitations_mentioned": [
+      "Analysis restricted to summary statistics, not raw data",
+      "Could not directly fit machine learning models or test their assumptions"
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "true_positive_rate": 0.6,
+    "true_positives": [
+      "X1",
+      "X2",
+      "X3"
+    ],
+    "false_positive_rate_noise": 0.0,
+    "false_positives_noise": [],
+    "correlated_feature_confusion_rate": 0.0,
+    "correlated_confused": [],
+    "interaction_detected": false,
+    "coefficient_errors": {
+      "X1": 0.10000000000000009,
+      "X2": 0.0,
+      "X3": 0.0
+    },
+    "mean_coefficient_error": 0.03333333333333336,
+    "nonlinearity_detected": false,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multiple comparison correction",
+      "multicollinearity analysis",
+      "linear regression (approximate)"
+    ],
+    "limitations_mentioned": [
+      "Analysis restricted to summary statistics, not raw data",
+      "Could not directly fit machine learning models or test their assumptions"
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y \u2248 1.9*X1 - 1.5*X3 + 0.5*X2"
+  }
+}

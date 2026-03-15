@@ -1,0 +1,68 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Overview}
+\label{sec:method_overview}
+
+We design a controlled experiment to evaluate whether \aiscientists---\llms prompted to act as senior data scientists---can recover a known data generating process from summary statistics.
+Our experiment has two conditions: a \textit{live salmon} condition with structured signal and a \textit{dead salmon} condition with pure noise.
+Three frontier \llms each analyze both datasets three times, producing 18 papers total, which we evaluate against ground truth using automated claim extraction.
+
+\subsection{Dataset Construction}
+\label{sec:datasets}
+
+\para{Live salmon dataset.}
+We generate 1{,}000 samples with 20 features from the following data generating process:
+\begin{equation}
+    Y = 2 X_1 + 0.5 X_2 - 1.5 X_3 + 0.8 (X_4 \cdot X_5) + \epsilon, \quad \epsilon \sim \mathcal{N}(0, 1)
+    \label{eq:dgp}
+\end{equation}
+This formula includes three design elements that test different analytical capabilities:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item {\bf Linear terms with varying strength.} $X_1$ (coefficient 2.0), $X_2$ (0.5), and $X_3$ ($-1.5$) test detection at different signal-to-noise ratios. $X_2$'s weaker coefficient makes it harder to distinguish from noise.
+    \item {\bf Interaction term.} The $X_4 \cdot X_5$ product (coefficient 0.8) tests whether \aiscientists explore beyond linear relationships. This term contributes $R^2 = 0.083$ (8\% of total variance) when added to a linear-only model---a meaningful effect size that standard interaction screening would detect.
+    \item {\bf Correlated proxy features.} Features $X_{16}$--$X_{20}$ are correlated with $X_1$--$X_5$ (correlations 0.5--0.8), testing whether \aiscientists distinguish direct predictors from confounded proxies.
+\end{itemize}
+
+Features $X_6$--$X_{15}$ are pure noise ($\text{i.i.d.}\ \mathcal{N}(0,1)$, independent of $Y$), serving as false-positive controls. All features are approximately standard normal. The dataset is fully reproducible (random seed 42).
+
+\para{Dead salmon dataset.}
+We generate a second dataset with identical feature structure (20 features, 1{,}000 samples) but with $Y \sim \mathcal{N}(0,1)$ independent of all features. Any reported finding on this dataset is a false positive.
+
+\subsection{AI Scientist Protocol}
+\label{sec:protocol}
+
+\para{Models.}
+We evaluate three frontier \llms via the OpenRouter API: \gptmodel (OpenAI), \claudemodel (Anthropic), and \geminimodel (Google).
+Each model is run 3 times per dataset with temperature 0.7 and a maximum of 4{,}096 output tokens.
+
+\para{Prompt design.}
+Each model receives a standardized prompt containing: (1) summary statistics for all 20 features, (2) the full pairwise correlation matrix, (3) pairwise correlations with $Y$, (4) inter-feature correlations, and (5) 15 sample rows.
+The prompt instructs the model to act as a senior data scientist and write a short research paper identifying the data generating process.
+We provide summary statistics rather than raw data to isolate analytical reasoning from code execution capability, following the observation of \citet{zhu2025ai} that implementation is a separate bottleneck.
+
+\para{Repetitions.}
+Three independent runs per model per dataset yield $3 \times 3 \times 2 = 18$ total papers (9 live salmon, 9 dead salmon).
+
+\subsection{Evaluation Pipeline}
+\label{sec:evaluation}
+
+\para{Automated claim extraction.}
+Each paper is processed by \gptmodel (temperature 0) to extract structured claims: features identified as significant, estimated coefficients, interaction terms mentioned, statistical methods used, and corrections applied.
+We use a separate model instance at temperature 0 to maximize extraction consistency.
+
+\para{Ground truth scoring.}
+Extracted claims are scored against the known \dgp:
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item {\bf True feature detection rate}: fraction of $\{X_1, X_2, X_3\}$ correctly identified.
+    \item {\bf Interaction detection}: binary---did the paper identify $X_4 \times X_5$?
+    \item {\bf False positive rate}: fraction of noise features $\{X_6, \ldots, X_{15}\}$ incorrectly reported.
+    \item {\bf Proxy confusion rate}: fraction of papers reporting $\{X_{16}, \ldots, X_{20}\}$ as causal.
+    \item {\bf Coefficient accuracy}: mean absolute error between estimated and true coefficients.
+    \item {\bf Dead salmon false positives}: any features reported as significant in the null dataset.
+\end{itemize}
+
+\para{Statistical baselines.}
+For comparison, we run standard statistical methods on the live salmon data: ordinary least squares (OLS) regression, \lassobaseline with cross-validation, OLS with an explicit $X_4 \times X_5$ interaction term, and random forest regression.
+These baselines establish what competent automated analysis \textit{should} find.

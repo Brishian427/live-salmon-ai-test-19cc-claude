@@ -1,0 +1,14 @@
+PDF: papers/fang_2025_more_automate_less_see.pdf
+Total pages: 26
+Pages per chunk: 3
+
+Chunks:
+  fang_2025_more_automate_less_see_chunk_001.pdf: pages 1-3
+  fang_2025_more_automate_less_see_chunk_002.pdf: pages 4-6
+  fang_2025_more_automate_less_see_chunk_003.pdf: pages 7-9
+  fang_2025_more_automate_less_see_chunk_004.pdf: pages 10-12
+  fang_2025_more_automate_less_see_chunk_005.pdf: pages 13-15
+  fang_2025_more_automate_less_see_chunk_006.pdf: pages 16-18
+  fang_2025_more_automate_less_see_chunk_007.pdf: pages 19-21
+  fang_2025_more_automate_less_see_chunk_008.pdf: pages 22-24
+  fang_2025_more_automate_less_see_chunk_009.pdf: pages 25-26

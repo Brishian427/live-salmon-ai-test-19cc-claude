@@ -1,0 +1,6 @@
+PDF: papers/bennett_2009_dead_salmon_fmri.pdf
+Total pages: 1
+Pages per chunk: 3
+
+Chunks:
+  bennett_2009_dead_salmon_fmri_chunk_001.pdf: page 1

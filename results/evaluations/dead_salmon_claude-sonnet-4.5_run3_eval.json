@@ -1,0 +1,81 @@
+{
+  "cache_key": "dead_salmon_claude-sonnet-4.5_run3",
+  "model_name": "claude-sonnet-4.5",
+  "dataset": "dead_salmon",
+  "run_id": 3,
+  "claims": {
+    "features_claimed_significant": [],
+    "features_claimed_not_significant": [
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {},
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multicollinearity assessment",
+      "statistical inference",
+      "effect size estimation",
+      "statistical power analysis"
+    ],
+    "confidence_level": "high",
+    "null_finding": true,
+    "proposed_formula": "Y is independent of X1-X20",
+    "limitations_mentioned": [
+      "Linear assumption",
+      "Interaction effects not systematically tested",
+      "Multiple collinearity reduces effective sample size",
+      "Sample size may not detect very small effects",
+      "Distributional assumptions may not hold perfectly",
+      "Model specification does not include nonlinear terms",
+      "Outlier influence not fully assessed"
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "false_positives_total": 0,
+    "false_positives_list": [],
+    "null_finding_reported": true,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multicollinearity assessment",
+      "statistical inference",
+      "effect size estimation",
+      "statistical power analysis"
+    ],
+    "limitations_mentioned": [
+      "Linear assumption",
+      "Interaction effects not systematically tested",
+      "Multiple collinearity reduces effective sample size",
+      "Sample size may not detect very small effects",
+      "Distributional assumptions may not hold perfectly",
+      "Model specification does not include nonlinear terms",
+      "Outlier influence not fully assessed"
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y is independent of X1-X20"
+  }
+}

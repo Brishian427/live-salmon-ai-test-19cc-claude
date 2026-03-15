@@ -1,0 +1,96 @@
+{
+  "cache_key": "live_salmon_gpt-4.1_run2",
+  "model_name": "gpt-4.1",
+  "dataset": "live_salmon",
+  "run_id": 2,
+  "claims": {
+    "features_claimed_significant": [
+      "X1",
+      "X3",
+      "X2"
+    ],
+    "features_claimed_not_significant": [
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {
+      "X1": 1.56,
+      "X3": -1.1,
+      "X2": 0.16
+    },
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "exploratory statistics",
+      "correlation analysis",
+      "multivariate linear regression",
+      "collinearity diagnostics",
+      "nonlinearity and interaction detection",
+      "multiple comparison correction"
+    ],
+    "confidence_level": "high",
+    "null_finding": false,
+    "proposed_formula": "Y = \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2082\u00b7X3 + \u03b2\u2083\u00b7X2 + \u03b5",
+    "limitations_mentioned": [
+      "The analysis assumes linearity; subtle nonlinearities may go undetected given the sample size.",
+      "In choosing between highly correlated features, there is some arbitrariness; alternative selection might yield similar results.",
+      "Findings are strictly limited to this dataset; external validity is not established.",
+      "Bonferroni is conservative; weaker effects (e.g., X2) may be real but not pass this stringent threshold.",
+      "Only observed features are analyzed; hidden variables may influence results."
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "true_positive_rate": 0.6,
+    "true_positives": [
+      "X1",
+      "X2",
+      "X3"
+    ],
+    "false_positive_rate_noise": 0.0,
+    "false_positives_noise": [],
+    "correlated_feature_confusion_rate": 0.0,
+    "correlated_confused": [],
+    "interaction_detected": false,
+    "coefficient_errors": {
+      "X1": 0.43999999999999995,
+      "X2": 0.33999999999999997,
+      "X3": 0.3999999999999999
+    },
+    "mean_coefficient_error": 0.39333333333333326,
+    "nonlinearity_detected": false,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "exploratory statistics",
+      "correlation analysis",
+      "multivariate linear regression",
+      "collinearity diagnostics",
+      "nonlinearity and interaction detection",
+      "multiple comparison correction"
+    ],
+    "limitations_mentioned": [
+      "The analysis assumes linearity; subtle nonlinearities may go undetected given the sample size.",
+      "In choosing between highly correlated features, there is some arbitrariness; alternative selection might yield similar results.",
+      "Findings are strictly limited to this dataset; external validity is not established.",
+      "Bonferroni is conservative; weaker effects (e.g., X2) may be real but not pass this stringent threshold.",
+      "Only observed features are analyzed; hidden variables may influence results."
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y = \u03b2\u2080 + \u03b2\u2081\u00b7X1 + \u03b2\u2082\u00b7X3 + \u03b2\u2083\u00b7X2 + \u03b5"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "cache_key": "live_salmon_claude-sonnet-4.5_run3",
+  "model_name": "claude-sonnet-4.5",
+  "dataset": "live_salmon",
+  "run_id": 3,
+  "claims": {
+    "features_claimed_significant": [
+      "X1",
+      "X16",
+      "X3",
+      "X18",
+      "X2",
+      "X17"
+    ],
+    "features_claimed_not_significant": [
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {
+      "X1": 1.8,
+      "X3": -1.5
+    },
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "univariate analysis",
+      "multicollinearity assessment"
+    ],
+    "confidence_level": "high",
+    "null_finding": false,
+    "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081(X1) + \u03b2\u2082(X3) + \u03b5",
+    "limitations_mentioned": [
+      "Multicollinearity confounding",
+      "Linear assumption",
+      "Correlation vs. causation",
+      "Bivariate analysis limitations",
+      "Multiple comparisons",
+      "Sample specificity",
+      "Missing interaction tests"
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "true_positive_rate": 0.6,
+    "true_positives": [
+      "X1",
+      "X2",
+      "X3"
+    ],
+    "false_positive_rate_noise": 0.0,
+    "false_positives_noise": [],
+    "correlated_feature_confusion_rate": 0.6,
+    "correlated_confused": [
+      "X16",
+      "X17",
+      "X18"
+    ],
+    "interaction_detected": false,
+    "coefficient_errors": {
+      "X1": 0.19999999999999996,
+      "X3": 0.0
+    },
+    "mean_coefficient_error": 0.09999999999999998,
+    "nonlinearity_detected": false,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "univariate analysis",
+      "multicollinearity assessment"
+    ],
+    "limitations_mentioned": [
+      "Multicollinearity confounding",
+      "Linear assumption",
+      "Correlation vs. causation",
+      "Bivariate analysis limitations",
+      "Multiple comparisons",
+      "Sample specificity",
+      "Missing interaction tests"
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y \u2248 \u03b2\u2080 + \u03b2\u2081(X1) + \u03b2\u2082(X3) + \u03b5"
+  }
+}

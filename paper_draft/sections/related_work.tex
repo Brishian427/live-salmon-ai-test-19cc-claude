@@ -1,0 +1,26 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{The dead salmon tradition in science.}
+\citet{bennett2009neural} demonstrated that standard fMRI analysis applied to a dead Atlantic salmon produced statistically significant brain activations when multiple comparisons corrections were not applied.
+This work catalyzed widespread adoption of family-wise error rate (FWER) and false discovery rate (FDR) corrections in neuroimaging.
+\citet{eklund2016cluster} extended this finding at scale, showing that widely used fMRI software packages (SPM, FSL, AFNI) produced inflated false-positive rates up to 70\%, potentially affecting tens of thousands of published studies.
+More recently, \citet{meloux2025dead} applied the dead salmon concept to AI interpretability, demonstrating that feature attribution methods, probing classifiers, and sparse autoencoders produce plausible but spurious explanations for randomly initialized neural networks.
+Our work extends this tradition to \aiscientist systems: rather than testing a specific analytical tool, we test the end-to-end analytical reasoning of \llms acting as scientists.
+Unlike prior dead salmon studies that focus on false positives from null data, we also provide a ``live salmon'' with known signal, enabling measurement of both false positive and false negative rates.
+
+\para{Autonomous AI scientist systems.}
+\citet{lu2024ai} introduced The AI Scientist, the first framework for fully automated scientific discovery, where \llms generate ideas, write code, run experiments, produce papers, and conduct peer review---all for approximately \$15 per paper.
+Subsequent evaluations have identified significant limitations.
+\citet{beel2025evaluating} found that 42\% of AI Scientist experiments failed due to coding errors, literature reviews were inadequate (median 5 citations), and numerical results were sometimes hallucinated.
+\citet{luo2025more} identified four systematic failure modes: inappropriate benchmark selection, data leakage, metric misuse, and post-hoc selection bias.
+\citet{zhu2025ai} argued that the fundamental bottleneck is implementation capability, not idea generation---\llms produce novel ideas but struggle to execute rigorous experiments.
+Our work differs from these evaluations in a key respect: we provide a controlled ground truth.
+Rather than auditing AI-generated papers for quality or plausibility, we measure whether \aiscientists recover a known data generating process, enabling precise quantification of what they find and what they miss.
+
+\para{Benchmarking AI research agents.}
+\citet{starace2025paperbench} introduced PaperBench, decomposing 20 ICML 2024 papers into 8,316 gradable sub-tasks and finding that the best agent achieved only 21\% replication score.
+\citet{gu2024blade} proposed BLADE, a benchmark for evaluating agents on data-driven science with ground truth from expert data scientists.
+\citet{si2024can} conducted a large-scale study with 100+ NLP researchers, finding that LLM-generated research ideas are rated as more novel but less feasible than human expert ideas.
+Our live salmon benchmark complements these efforts by providing a simpler but more controlled evaluation: rather than measuring broad research capability, we isolate the analytical reasoning component and test it against a known answer.
+This design enables precise diagnosis of \textit{what types of patterns} \aiscientists can and cannot detect.

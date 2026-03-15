@@ -1,0 +1,10 @@
+# Exclude large generated data files
+live_salmon_data.csv
+dead_salmon_data.csv
+
+# Include samples, ground truth, docs, and the generation script
+!live_salmon_sample.csv
+!dead_salmon_sample.csv
+!ground_truth.json
+!generate_live_salmon_data.py
+!README.md

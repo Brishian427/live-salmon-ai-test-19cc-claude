@@ -1,0 +1,89 @@
+{
+  "cache_key": "dead_salmon_claude-sonnet-4.5_run1",
+  "model_name": "claude-sonnet-4.5",
+  "dataset": "dead_salmon",
+  "run_id": 1,
+  "claims": {
+    "features_claimed_significant": [],
+    "features_claimed_not_significant": [
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20"
+    ],
+    "estimated_coefficients": {},
+    "interaction_terms_detected": [],
+    "nonlinearity_detected": false,
+    "multiple_comparisons_correction_mentioned": true,
+    "multiple_comparisons_correction_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multicollinearity assessment",
+      "multiple testing correction",
+      "effect size evaluation"
+    ],
+    "confidence_level": "high",
+    "null_finding": true,
+    "proposed_formula": "Y ~ N(0, 1) + \u03b5 or Y ~ f(X1, ..., X20) + \u03b5 (where f is unknown and possibly nonlinear)",
+    "limitations_mentioned": [
+      "Analysis relied on summary statistics, not raw data",
+      "Unable to fit regression models with multiple predictors",
+      "Unable to test for nonlinear relationships",
+      "Unable to examine interaction effects systematically",
+      "Unable to conduct diagnostic checks for outliers or influential observations",
+      "Unable to apply machine learning methods",
+      "Linear assumptions of correlation analysis",
+      "Multiple testing correction may be overly conservative due to correlated features",
+      "Sample size may be insufficient for detecting very small or complex effects",
+      "Lack of domain knowledge about features",
+      "Unknown data generating mechanism",
+      "No information about measurement error"
+    ],
+    "overall_quality_1_to_5": 4
+  },
+  "scores": {
+    "false_positives_total": 0,
+    "false_positives_list": [],
+    "null_finding_reported": true,
+    "multiple_comparisons_mentioned": true,
+    "multiple_comparisons_applied": true,
+    "methods_used": [
+      "correlation analysis",
+      "multicollinearity assessment",
+      "multiple testing correction",
+      "effect size evaluation"
+    ],
+    "limitations_mentioned": [
+      "Analysis relied on summary statistics, not raw data",
+      "Unable to fit regression models with multiple predictors",
+      "Unable to test for nonlinear relationships",
+      "Unable to examine interaction effects systematically",
+      "Unable to conduct diagnostic checks for outliers or influential observations",
+      "Unable to apply machine learning methods",
+      "Linear assumptions of correlation analysis",
+      "Multiple testing correction may be overly conservative due to correlated features",
+      "Sample size may be insufficient for detecting very small or complex effects",
+      "Lack of domain knowledge about features",
+      "Unknown data generating mechanism",
+      "No information about measurement error"
+    ],
+    "overall_quality": 4,
+    "proposed_formula": "Y ~ N(0, 1) + \u03b5 or Y ~ f(X1, ..., X20) + \u03b5 (where f is unknown and possibly nonlinear)"
+  }
+}

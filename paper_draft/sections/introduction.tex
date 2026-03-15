@@ -1,0 +1,32 @@
+\section{Introduction}
+\label{sec:intro}
+
+When \citet{bennett2009neural} placed a dead Atlantic salmon in an fMRI scanner and asked it to determine the emotions of photographs, the resulting ``significant'' brain activations became one of the most memorable demonstrations of the multiple comparisons problem in science.
+The study showed that standard analytical pipelines could produce plausible but completely spurious results---a finding that reshaped neuroimaging methodology.
+Today, a new class of analytical pipelines demands similar scrutiny: autonomous \aiscientist systems that generate hypotheses, analyze data, and write research papers with minimal human oversight \citep{lu2024ai}.
+
+These systems are scaling rapidly.
+\citet{lu2024ai} demonstrated end-to-end automated research at roughly \$15 per paper; subsequent work has identified numerous failure modes including coding errors \citep{beel2025evaluating}, fabricated results \citep{luo2025more}, and poor implementation capability \citep{zhu2025ai}.
+Yet a fundamental question remains unanswered: \textbf{when given data with a known generating process, do \aiscientists correctly recover the true model?}
+Existing evaluations either audit AI-generated papers post-hoc without ground truth \citep{luo2025more, beel2025evaluating} or benchmark replication ability on open-ended tasks \citep{starace2025paperbench}.
+None provide a controlled experiment where the correct answer is known in advance.
+
+We fill this gap with the \livesalmon---a complement to Bennett et al.'s original experiment.
+Where the dead salmon test asks whether analytical pipelines produce false positives on null data, the live salmon test asks whether they recover true signal from structured data.
+We generate a synthetic dataset from a known formula containing both linear terms ($X_1$, $X_2$, $X_3$) and a multiplicative interaction ($X_4 \times X_5$), plus correlated proxy features and pure noise dimensions.
+Three frontier \llms (\gptmodel, \claudemodel, \geminimodel) each analyze this dataset three times, producing 9 ``live salmon'' papers.
+We repeat the experiment with a null dataset (pure noise target), producing 9 ``dead salmon'' papers as controls.
+
+Our results reveal a striking pattern.
+All \aiscientists reliably detect the strong linear effects: $X_1$ (coefficient 2.0) and $X_3$ (coefficient $-1.5$) are identified in 100\% of papers, and the weaker $X_2$ (coefficient 0.5) in 67\%.
+However, \textbf{zero out of 9 papers detect the $X_4 \times X_5$ interaction}, despite it contributing 8\% of total variance---comparable in effect size to $X_2$, which most papers do find.
+On the dead salmon data, all 9 papers correctly report null findings with zero false positives, in direct contrast to Bennett et al.'s original result.
+The collective ``AI scientific literature'' produced by these systems would lead readers to believe the data generating process is purely linear, systematically missing a meaningful nonlinear component.
+
+We make the following contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We introduce the \livesalmon, the first controlled benchmark that evaluates \aiscientists against a known data generating process, complementing the classic dead salmon paradigm.
+    \item We conduct a systematic evaluation of three frontier \llms acting as data scientists, revealing that they universally fail to detect interaction effects (0/9) despite reliably identifying linear predictors (100\% for strong effects).
+    \item We demonstrate that current \aiscientists exhibit zero false positives on null data---a surprising contrast to the original dead salmon fMRI study---revealing that the core limitation is not statistical conservatism but methodological narrowness.
+    \item We provide a reusable evaluation framework with known-\dgp datasets and automated claim extraction for benchmarking future \aiscientist systems.
+\end{itemize}
