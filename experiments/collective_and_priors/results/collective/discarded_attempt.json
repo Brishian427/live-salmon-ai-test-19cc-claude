@@ -1,0 +1,9 @@
+{
+  "disposition": "discarded: incomplete due to API connection error; exogenous to outcome.",
+  "enforcement_usd": "0.0485160000",
+  "replacement_run_id": "anthropic_m3/G1_strong_shared_episode6/A_restart1",
+  "response_count": 6,
+  "run_id": "anthropic_m3/G1_strong_shared_episode6/A",
+  "scored": false,
+  "shown_to_other_agents": false
+}

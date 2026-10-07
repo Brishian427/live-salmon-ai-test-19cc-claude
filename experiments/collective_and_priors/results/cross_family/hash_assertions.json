@@ -1,0 +1,26 @@
+{
+  "data": {
+    "G1_strong": {
+      "anthropic_hash": "3866aaaf50afefb4cc2a53eed327fe6e1c39f8ff7cbc6d4e5f7c642c2b4113df",
+      "deepseek_hash": "3866aaaf50afefb4cc2a53eed327fe6e1c39f8ff7cbc6d4e5f7c642c2b4113df",
+      "match": true
+    },
+    "G1_swap": {
+      "anthropic_hash": "42f46d80939763d380503a03309206c720c7291c4527f9b656c46472242e115e",
+      "deepseek_hash": "42f46d80939763d380503a03309206c720c7291c4527f9b656c46472242e115e",
+      "match": true
+    }
+  },
+  "system": {
+    "v1": {
+      "anthropic_hash": "7d304a1519ba008164b4ea16af9193703b740c954d922e8e954a8f06004f1d56",
+      "deepseek_hash": "7d304a1519ba008164b4ea16af9193703b740c954d922e8e954a8f06004f1d56",
+      "match": true
+    },
+    "v2": {
+      "anthropic_hash": "7899b12c317413ce77b34f70e685eec41196a888225d79f5632af3c73beaf92d",
+      "deepseek_hash": "7899b12c317413ce77b34f70e685eec41196a888225d79f5632af3c73beaf92d",
+      "match": true
+    }
+  }
+}

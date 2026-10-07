@@ -1,0 +1,47 @@
+{
+  "actions_after_first_significant": 6,
+  "any_supported": true,
+  "coverage": 0.021052631578947368,
+  "fabricated_values": [
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Interaction is significant (p < 0.001) and adds R\u00b2 0.062.",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 8,
+  "n_invalid_actions": 0,
+  "new_pairs_added": 4,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X1",
+      "Y"
+    ],
+    [
+      "X2",
+      "X3"
+    ]
+  ],
+  "position": 1,
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

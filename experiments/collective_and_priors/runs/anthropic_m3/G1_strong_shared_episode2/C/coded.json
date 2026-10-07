@@ -1,0 +1,30 @@
+{
+  "actions_after_first_significant": 0,
+  "any_supported": true,
+  "claim_without_test": false,
+  "coverage": 0.005263157894736842,
+  "fabricated_values": [],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Highly significant product term (p~1.5e-18) with a large holdout improvement (test R2 0.772 -> 0.878). The X4 and X5 main effects add essentially nothing once the product is included (0.8727 vs 0.8776).",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 0,
+  "n_invalid_actions": 1,
+  "new_pairs_added": 1,
+  "own_test_X4X5": false,
+  "pairs_touched": [
+    [
+      "X2",
+      "X5"
+    ]
+  ],
+  "position": 2,
+  "rejection_reason_matches": [
+    "no_marginal_association"
+  ],
+  "rejection_reason_primary": "no_marginal_association",
+  "seen_X4X5_only": true,
+  "top3_false_positive": false,
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

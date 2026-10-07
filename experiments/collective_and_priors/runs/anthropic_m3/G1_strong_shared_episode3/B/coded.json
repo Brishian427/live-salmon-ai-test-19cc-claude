@@ -1,0 +1,46 @@
+{
+  "actions_after_first_significant": 0,
+  "any_supported": true,
+  "claim_without_test": false,
+  "coverage": 0.02631578947368421,
+  "fabricated_values": [],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Highly significant interaction (p=1.5e-18) and large out-of-sample holdout improvement (test R2 0.772 -> 0.878).",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 0,
+  "n_invalid_actions": 0,
+  "new_pairs_added": 5,
+  "own_test_X4X5": false,
+  "pairs_touched": [
+    [
+      "X1",
+      "X5"
+    ],
+    [
+      "X2",
+      "X4"
+    ],
+    [
+      "X2",
+      "X5"
+    ],
+    [
+      "X3",
+      "X4"
+    ],
+    [
+      "X3",
+      "X5"
+    ]
+  ],
+  "position": 3,
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "seen_X4X5_only": true,
+  "top3_false_positive": false,
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

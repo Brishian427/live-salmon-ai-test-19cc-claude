@@ -1,0 +1,29 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.712, p<0.001; Regression coefficient 2.121, p<0.001; Adds predictive power in holdout (test R2 0.553 for X1+X2 and 0.771 for full model)."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.171, p<0.001; Holdout test R2 improves from 0.553 (X1+X2) to 0.771 (full model)."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "No experimental manipulation or causal design; observational data only."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "No experimental manipulation or causal design; observational data only."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

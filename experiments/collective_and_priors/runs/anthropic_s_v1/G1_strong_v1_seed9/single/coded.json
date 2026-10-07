@@ -1,0 +1,32 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.015789473684210527,
+  "fabricated_values": [],
+  "interaction_code": "not_considered",
+  "interaction_reason_raw": "Part of the same holdout gain; it could come from X2:X5, X4:X5, or both, and was not tested separately.",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 0,
+  "n_invalid_actions": 0,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X2",
+      "X3"
+    ]
+  ],
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

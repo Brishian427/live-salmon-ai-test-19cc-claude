@@ -1,0 +1,39 @@
+{
+  "agent_id": "C",
+  "agent_order": [
+    "A",
+    "B",
+    "C"
+  ],
+  "data_sha256": "3866aaaf50afefb4cc2a53eed327fe6e1c39f8ff7cbc6d4e5f7c642c2b4113df",
+  "dataset": "G1_strong",
+  "episode": 1,
+  "framing": "F_neutral",
+  "generator_seed": 1001,
+  "mode": "shared",
+  "model": "claude-sonnet-5-5",
+  "parameters": {
+    "assistant_prefill_sent": false,
+    "cache_control_sent": false,
+    "effort_default": "high",
+    "effort_sent": false,
+    "max_tokens": 2048,
+    "model": "claude-sonnet-5-5",
+    "native_tools_sent": false,
+    "structured_output_sent": false,
+    "temperature": 1.0,
+    "thinking": {
+      "type": "between_tools"
+    },
+    "top_k_sent": false,
+    "top_p_sent": false
+  },
+  "position": 3,
+  "prompt_variant": "v2",
+  "prompts_sha256": "bd7c6c7656049d6482994f50d388b3b6a82cf86f505690e07f592cec2073a8e1",
+  "provider": "anthropic",
+  "seed": 1,
+  "status": "complete",
+  "system_message_sha256": "7899b12c317413ce77b34f70e685eec41196a888225d79f5632af3c73beaf92d",
+  "temperature": 1.0
+}

@@ -1,0 +1,9 @@
+{
+  "coding_mismatches": 0,
+  "network_disabled": true,
+  "runs_replayed": 10,
+  "target_interaction": [
+    "X1",
+    "X3"
+  ]
+}

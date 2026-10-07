@@ -1,0 +1,36 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.021052631578947368,
+  "fabricated_values": [],
+  "interaction_code": "not_considered",
+  "interaction_reason_raw": "Only tested within a combined holdout; the large R2 increase there is likely explained by the omitted X1:X3 or X3:X4 terms, but individually X1:X3 and X3:X4 were rejected, so it cannot be attributed. Not individually tested.",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 0,
+  "n_invalid_actions": 0,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X2",
+      "X3"
+    ],
+    [
+      "X3",
+      "X4"
+    ]
+  ],
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

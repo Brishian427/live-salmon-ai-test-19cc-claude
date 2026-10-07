@@ -1,0 +1,31 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.005263157894736842,
+  "fabricated_values": [
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Significant interaction (p<1e-77), R2 delta=0.062, holdout test R2=0.835",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 4,
+  "n_invalid_actions": 2,
+  "new_pairs_added": 1,
+  "pairs_touched": [
+    [
+      "X1",
+      "X3"
+    ]
+  ],
+  "position": 1,
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

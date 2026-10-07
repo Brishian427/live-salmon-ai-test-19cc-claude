@@ -1,0 +1,751 @@
+{
+  "P1": {
+    "share": 0.7894736842105263,
+    "top3_calls": 30,
+    "total_calls": 38,
+    "verdict": "DIFFERENT",
+    "x4x5_runs": 5
+  },
+  "P2": {
+    "anthropic": {
+      "oracle_success": 1,
+      "target": "X4:X5",
+      "union": [
+        "X1:X2",
+        "X1:X3",
+        "X1:X4",
+        "X2:X3",
+        "X4:X5"
+      ]
+    },
+    "cross_success": 1,
+    "cross_union": [
+      "X1:X2",
+      "X1:X3",
+      "X1:X4",
+      "X2:X3",
+      "X4:X5"
+    ],
+    "deepseek": {
+      "oracle_success": 0,
+      "target": "X4:X5",
+      "union": [
+        "X1:X2",
+        "X1:X3"
+      ]
+    },
+    "supported": true
+  },
+  "P3": {
+    "anthropic": {
+      "s_v2": 10,
+      "s_v3": 10
+    },
+    "deepseek": {
+      "v2": 5,
+      "v3": 4
+    },
+    "fisher_p": 1.0
+  },
+  "arms": {
+    "anthropic_s_v1": {
+      "full_width": [
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 1,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 2,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 3,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 4,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 5,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 6,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 7,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 8,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 9,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 10,
+          "step": 1
+        }
+      ],
+      "summary": {
+        "any_test_interaction": 10,
+        "api_calls": 90,
+        "claim_without_test": 0,
+        "claims_without_test": [],
+        "estimated_usd": 0.520458,
+        "first": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 0,
+          "invalid": 0,
+          "regression": 10,
+          "test_interaction": 30
+        },
+        "interaction_pairs": {
+          "X1:X2": 10,
+          "X1:X3": 10,
+          "X2:X3": 10,
+          "X3:X4": 1,
+          "X4:X5": 7
+        },
+        "n": 10,
+        "per_run": [
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 1,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 2,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 3,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 4,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 5,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 6,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 7,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 8,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 9,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 10,
+            "target_test_interaction": true
+          }
+        ],
+        "pooled": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 28,
+          "invalid": 0,
+          "regression": 14,
+          "test_interaction": 38
+        },
+        "reported_supported": 7,
+        "second": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 28,
+          "invalid": 0,
+          "regression": 4,
+          "test_interaction": 8
+        },
+        "target_test_interaction": 7,
+        "width_distribution": {
+          "20": 10
+        }
+      }
+    },
+    "anthropic_s_v2": {
+      "full_width": [
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 1,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 2,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 3,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 4,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 5,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 6,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 7,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 8,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 9,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 4,
+          "X4_p": 1.5435e-05,
+          "X5_abs_t_rank": 5,
+          "X5_p": 0.000398853,
+          "seed": 10,
+          "step": 1
+        }
+      ],
+      "summary": {
+        "any_test_interaction": 10,
+        "api_calls": 90,
+        "claim_without_test": 0,
+        "claims_without_test": [],
+        "estimated_usd": 0.589138,
+        "first": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 0,
+          "invalid": 0,
+          "regression": 10,
+          "test_interaction": 30
+        },
+        "interaction_pairs": {
+          "X1:X2": 10,
+          "X1:X3": 10,
+          "X1:X4": 3,
+          "X2:X3": 10,
+          "X4:X5": 5
+        },
+        "n": 10,
+        "per_run": [
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 1,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 2,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 3,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 4,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 5,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 6,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 7,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 8,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "not_considered",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": false,
+            "seed": 9,
+            "target_test_interaction": false
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 0,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 10,
+            "target_test_interaction": true
+          }
+        ],
+        "pooled": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 31,
+          "invalid": 1,
+          "regression": 11,
+          "test_interaction": 38
+        },
+        "reported_supported": 5,
+        "second": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 31,
+          "invalid": 1,
+          "regression": 1,
+          "test_interaction": 8
+        },
+        "target_test_interaction": 5,
+        "width_distribution": {
+          "20": 10
+        }
+      }
+    },
+    "anthropic_s_v3": {
+      "full_width": [
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 1,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 2,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 3,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 4,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 5,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 6,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 7,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 8,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 9,
+          "step": 1
+        },
+        {
+          "X4_abs_t_rank": 5,
+          "X4_p": 0.000401905,
+          "X5_abs_t_rank": 4,
+          "X5_p": 1.62185e-05,
+          "seed": 10,
+          "step": 1
+        }
+      ],
+      "summary": {
+        "any_test_interaction": 10,
+        "api_calls": 90,
+        "claim_without_test": 0,
+        "claims_without_test": [],
+        "estimated_usd": 0.5847239999999999,
+        "first": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 11,
+          "invalid": 0,
+          "regression": 10,
+          "test_interaction": 19
+        },
+        "interaction_pairs": {
+          "X1:X2": 10,
+          "X1:X3": 10,
+          "X2:X3": 10
+        },
+        "n": 10,
+        "per_run": [
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 1,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 2,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 3,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 4,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 5,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 6,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 7,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 8,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 9,
+            "target_test_interaction": true
+          },
+          {
+            "any_test_interaction": true,
+            "claim_without_test": false,
+            "interaction_code": "reported_supported",
+            "invalid_actions": 1,
+            "max_regression_width": 20,
+            "reported_supported": true,
+            "seed": 10,
+            "target_test_interaction": true
+          }
+        ],
+        "pooled": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 30,
+          "invalid": 10,
+          "regression": 20,
+          "test_interaction": 30
+        },
+        "reported_supported": 10,
+        "second": {
+          "correlation": 0,
+          "distribution": 0,
+          "holdout": 19,
+          "invalid": 10,
+          "regression": 10,
+          "test_interaction": 11
+        },
+        "target_test_interaction": 10,
+        "width_distribution": {
+          "20": 10
+        }
+      }
+    }
+  },
+  "budget": {
+    "by_batch": {
+      "anthropic_s_v1": 0.5204580000000002,
+      "anthropic_s_v2": 0.5891380000000002,
+      "anthropic_s_v3": 0.5847239999999999,
+      "anthropic_smoke": 0.17655199999999996
+    },
+    "cross_family_total": 1.8708720000000003,
+    "cumulative_usd": 2.061117528
+  },
+  "selected_model": "claude-sonnet-5-5"
+}

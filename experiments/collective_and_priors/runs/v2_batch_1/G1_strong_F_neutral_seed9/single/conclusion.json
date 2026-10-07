@@ -1,0 +1,59 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.712, p<0.001; Regression coefficient: 2.04, p<0.001 in multiple regression with X2 and X3."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.171, p<0.001; Regression coefficient: 0.549, p<0.001 in multiple regression with X1 and X3."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Correlation with Y: r=-0.539, p<0.001; Regression coefficient: -1.44, p<0.001 in multiple regression with X1 and X2."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient: 0.181, p<0.001 in full model with all predictors."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient: 0.147, p<0.001 in full model with all predictors."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only observational data available; no experimental design or adjustment for all confounders."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only observational data available; no experimental design or adjustment for all confounders."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only observational data available; no experimental design or adjustment for all confounders."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only observational data available; no experimental design or adjustment for all confounders."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Only observational data available; no experimental design or adjustment for all confounders."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

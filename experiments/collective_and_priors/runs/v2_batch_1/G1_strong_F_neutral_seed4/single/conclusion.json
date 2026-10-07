@@ -1,0 +1,70 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression: coef=2.032, p<0.001; consistently strong in holdout models"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression: coef=0.547, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression: coef=-1.440, p<0.001"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression: coef=0.181, p<0.001"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression: coef=0.147, p<0.001"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "rejected",
+      "reason": "Interaction p=0.176, delta R2 negligible (0.00084)"
+    },
+    {
+      "terms": ["X1", "X3"],
+      "status": "uncertain",
+      "reason": "Holdout test R2 improvement minimal (0.7732 to 0.7733); no formal test performed"
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation"
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation"
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation"
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation"
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation"
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

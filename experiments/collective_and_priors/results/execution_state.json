@@ -1,0 +1,9 @@
+{
+  "batch1_extension_complete": true,
+  "batch1_extension_n": 10,
+  "completed_batches": [],
+  "leg_a_enabled": true,
+  "stop_reason": "Gate 1b failed at both n=3 and authorized unchanged-spec n=10 extension",
+  "stopped_at": "batch_1",
+  "temperature": 1.0
+}

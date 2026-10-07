@@ -1,0 +1,185 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "In the full regression (Step 1), X1 has coefficient 2.12622 with p<0.001. In the reduced model (Step 3), coefficient 2.12602 with p<0.001. Correlation with Y is 0.730309 (p<0.001)."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "In the full regression (Step 1), X2 has coefficient 0.498065 with p<0.001. In the reduced model (Step 3), coefficient 0.498656 with p<0.001."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "In the full regression (Step 1), X3 has coefficient -1.51067 with p<0.001. In the reduced model (Step 3), coefficient -1.51339 with p<0.001. Correlation with Y is -0.55208 (p<0.001)."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Full regression: coefficient 0.140388, p=0.000401905. Reduced model: coefficient 0.137439, p=0.000469535."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Full regression: coefficient 0.17037, p=1.62185e-05. Reduced model: coefficient 0.173008, p=9.75945e-06."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "unsupported",
+      "reason": "test_interaction gave p=0.520085, interaction coefficient not significant."
+    },
+    {
+      "terms": ["X1", "X3"],
+      "status": "unsupported",
+      "reason": "Included in holdout with all interactions but not individually tested; no direct evidence from test_interaction."
+    },
+    {
+      "terms": ["X1", "X4"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X1", "X5"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X2", "X3"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X2", "X4"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X2", "X5"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X3", "X4"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X3", "X5"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    },
+    {
+      "terms": ["X4", "X5"],
+      "status": "unsupported",
+      "reason": "Not directly tested; holdout model includes it but no individual test."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality, only a strong association."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality, only a strong association."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality, only a strong association."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality, only a significant association."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality, only a significant association."
+    },
+    {
+      "term": "X6",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.908058)."
+    },
+    {
+      "term": "X7",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.581654)."
+    },
+    {
+      "term": "X8",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.744043)."
+    },
+    {
+      "term": "X9",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.766782)."
+    },
+    {
+      "term": "X10",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.521667)."
+    },
+    {
+      "term": "X11",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.722514)."
+    },
+    {
+      "term": "X12",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.255983)."
+    },
+    {
+      "term": "X13",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.135361)."
+    },
+    {
+      "term": "X14",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.524594)."
+    },
+    {
+      "term": "X15",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.626372)."
+    },
+    {
+      "term": "X16",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.874026)."
+    },
+    {
+      "term": "X17",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.176478)."
+    },
+    {
+      "term": "X18",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.402283)."
+    },
+    {
+      "term": "X19",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.354318)."
+    },
+    {
+      "term": "X20",
+      "claim": "none",
+      "reason": "Not significant in full regression (p=0.864527)."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

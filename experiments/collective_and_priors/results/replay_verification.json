@@ -1,0 +1,21 @@
+{
+  "coding_mismatches": 0,
+  "deterministic_files": {
+    "REPORT.md": "63cf360d6cde2a0df157d54ab8869b9697b3ddd7644581fec0c9679d5672f92d",
+    "tables\\b4_run_outcomes.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\b4_summary.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\calibration.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\fabricated_numbers.csv": "e7e1fc5d5c636e0cf09c753dd25eb1bd33105f291f639a361564e6596045ca1c",
+    "tables\\leg_a_new_pairs_by_position.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\leg_a_process.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\leg_a_success.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\leg_b_causal_claims.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\leg_c_underpowered.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tables\\rejection_reasons.csv": "6c25f6796597e43d0980b60a03b9f85288810b9ab419f2dd079431ae48bf7734",
+    "tables\\signal_detection.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "episodes": 72,
+  "network_disabled": true,
+  "records": 93,
+  "runs_replayed": 92
+}

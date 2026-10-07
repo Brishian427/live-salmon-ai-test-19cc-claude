@@ -1,0 +1,65 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Strong positive coefficient in regressions (2.13 in Step 4, p<0.001) and high correlation with Y (r=0.73)"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Significant positive coefficient (0.498, p<0.001) in regression models including X2"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Significant negative coefficient (-1.51, p<0.001) in regression models including X3"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Significant positive coefficient (0.137, p<0.001) in regression models including X4"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Significant positive coefficient (0.170, p<0.001) in regression models including X5"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "rejected",
+      "reason": "Interaction term not significant (p=0.520) and tiny delta R² (0.00018)"
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; only association can be inferred without randomization or temporal precedence"
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; only association can be inferred"
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; only association can be inferred"
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; only association can be inferred"
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; only association can be inferred"
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

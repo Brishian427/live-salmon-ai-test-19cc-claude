@@ -1,0 +1,65 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.73, p<0.001; Regression coefficient 2.23, p<0.001 in model with X1,X2; coefficient 2.13, p<0.001 in full model."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.15, p<0.001; Regression coefficient 0.50, p<0.001 in model with X1,X2; coefficient 0.50, p<0.001 in full model."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Full model regression coefficient -1.51, p<0.001."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Full model regression coefficient 0.14, p=0.0004."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Full model regression coefficient 0.17, p<0.001."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "rejected",
+      "reason": "Interaction test between X1 and X2 gave p=0.52, interaction coefficient 0.041, delta R^2 = 0.00018, not significant."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; strong association but causality cannot be established without further design."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; association present but causality not established."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; association present but causality not established."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; association present but causality not established."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; association present but causality not established."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

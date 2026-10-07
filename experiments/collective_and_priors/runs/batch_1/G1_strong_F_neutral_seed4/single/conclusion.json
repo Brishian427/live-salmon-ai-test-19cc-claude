@@ -1,0 +1,59 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation r=0.712, p<0.001; regression coef 2.135, p<0.001; holds in full model (coef 2.032, p<0.001)."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation r=0.171, p<0.001; regression coef 0.543, p<0.001; holds in full model (coef 0.547, p<0.001)."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Full model regression coef -1.440, p<0.001."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Full model regression coef 0.181, p<0.001."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Full model regression coef 0.147, p<0.001."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only correlational and regression evidence; no causal inference possible from observational data."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only correlational and regression evidence; no causal inference possible from observational data."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only correlational and regression evidence; no causal inference possible from observational data."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only correlational and regression evidence; no causal inference possible from observational data."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Only correlational and regression evidence; no causal inference possible from observational data."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

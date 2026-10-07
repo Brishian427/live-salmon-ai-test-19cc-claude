@@ -1,0 +1,10 @@
+{
+  "batch1_reported_supported": 0,
+  "completed_batches": [
+    "v2_batch_1"
+  ],
+  "leg_a_enabled": true,
+  "stop_reason": "pre-registered 0/10 branch",
+  "stopped_at": "v2_batch_1",
+  "temperature": 1.0
+}

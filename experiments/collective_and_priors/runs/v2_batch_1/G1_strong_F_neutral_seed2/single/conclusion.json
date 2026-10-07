@@ -1,0 +1,140 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient 2.032, p<0.001; correlation with Y r=0.712, p<0.001"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.547, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient -1.440, p<0.001; correlation with Y r=-0.539, p<0.001"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.181, p<0.001"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.147, p<0.001"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "rejected",
+      "reason": "Test_interaction gave interaction p=0.861, delta R2 negligible (7.65e-06)."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for unmeasured confounders. Regression indicates strong association."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; regression coefficient significant but causality not established."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; regression coefficient significant but causality not established."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; regression coefficient significant but causality not established."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; regression coefficient significant but causality not established."
+    },
+    {
+      "term": "X6",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.739)."
+    },
+    {
+      "term": "X7",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.672)."
+    },
+    {
+      "term": "X8",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.061)."
+    },
+    {
+      "term": "X9",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.448)."
+    },
+    {
+      "term": "X10",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.177)."
+    },
+    {
+      "term": "X11",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.223)."
+    },
+    {
+      "term": "X12",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.078)."
+    },
+    {
+      "term": "X13",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.355)."
+    },
+    {
+      "term": "X14",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.541)."
+    },
+    {
+      "term": "X15",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.966)."
+    },
+    {
+      "term": "X16",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.144)."
+    },
+    {
+      "term": "X17",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.254)."
+    },
+    {
+      "term": "X18",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.258)."
+    },
+    {
+      "term": "X19",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.178)."
+    },
+    {
+      "term": "X20",
+      "claim": "none",
+      "reason": "Regression coefficient not significant (p=0.266)."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

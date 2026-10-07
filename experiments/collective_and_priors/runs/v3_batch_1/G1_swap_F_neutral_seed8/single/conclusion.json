@@ -1,0 +1,65 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.730, p<0.001; regression coefficient=2.126, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Correlation with Y: r=-0.552, p<0.001; regression coefficient=-1.511, p<0.001"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.151, p<0.001; regression coefficient=0.498, p<0.001 (though modest)"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient=0.170, p<0.001"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient=0.140, p=0.0004; correlation with Y: r=0.091, p=0.004"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "supported",
+      "reason": "Interaction test: interaction coefficient=0.767, p<0.001; delta R2=0.062; holdout test R2 improves from 0.788 to 0.851 in full model, holdout test R2=0.835."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

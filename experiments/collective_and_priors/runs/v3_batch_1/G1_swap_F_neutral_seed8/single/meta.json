@@ -1,0 +1,16 @@
+{
+  "agent_id": "single",
+  "agent_order": [
+    "single"
+  ],
+  "dataset": "G1_swap",
+  "framing": "F_neutral",
+  "generator_seed": 1001,
+  "mode": "single",
+  "model": "deepseek-v4-pro",
+  "position": 1,
+  "prompts_sha256": "b09a2b688eeaef4c33be390fa80a1398d0748bbd9f8109fee3812a27455a72d9",
+  "seed": 8,
+  "status": "complete",
+  "temperature": 1.0
+}

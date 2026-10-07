@@ -1,0 +1,1596 @@
+{
+  "E3": {
+    "anthropic_only": [
+      "X1:X4",
+      "X2:X3",
+      "X4:X5"
+    ],
+    "anthropic_s_v2_union": [
+      "X1:X2",
+      "X1:X3",
+      "X1:X4",
+      "X2:X3",
+      "X4:X5"
+    ],
+    "deepseek_v2_subset_of_anthropic_s_v2": true,
+    "deepseek_v2_union": [
+      "X1:X2",
+      "X1:X3"
+    ]
+  },
+  "E4": {
+    "cross_family": 1,
+    "diversity_benefit": false,
+    "max_within_family": 1,
+    "within_anthropic": 1,
+    "within_deepseek": 0
+  },
+  "E6": {
+    "x4x5_reported_supported_fisher_two_sided_p": 0.6499166468206717,
+    "x4x5_tested_fisher_two_sided_p": 0.032507739938080496
+  },
+  "arms": {
+    "Anthropic S-v1": {
+      "informative_ordered": 8,
+      "informative_runs": 8,
+      "jaccard": {
+        "empty_runs_excluded": 0,
+        "mean": 0.8488888888888889,
+        "pairs_compared": 45
+      },
+      "mean_tests": 3.8,
+      "order_compatible_runs": 10,
+      "ordering": {
+        "ordered": 8,
+        "top3_only_no_contrast": 2
+      },
+      "per_run": [
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 1,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 2,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 3,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.465992,
+              "pair": [
+                "X3",
+                "X4"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 4,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 5,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 6,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 7,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 8,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 9,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": 6,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 10,
+          "tests_after_first_significant": 0
+        }
+      ],
+      "test_count_distribution": {
+        "3": 2,
+        "4": 8
+      },
+      "union": [
+        "X1:X2",
+        "X1:X3",
+        "X2:X3",
+        "X3:X4",
+        "X4:X5"
+      ]
+    },
+    "Anthropic S-v2": {
+      "informative_ordered": 6,
+      "informative_runs": 6,
+      "jaccard": {
+        "empty_runs_excluded": 0,
+        "mean": 0.7777777777777778,
+        "pairs_compared": 45
+      },
+      "mean_tests": 3.8,
+      "order_compatible_runs": 10,
+      "ordering": {
+        "ordered": 6,
+        "top3_only_no_contrast": 4
+      },
+      "per_run": [
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.0883122,
+              "pair": [
+                "X1",
+                "X4"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 1,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 2,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": 6,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 3,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 4,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 5,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.0883122,
+              "pair": [
+                "X1",
+                "X4"
+              ],
+              "step": 6
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 5,
+          "order": "ordered",
+          "seed": 6,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.0883122,
+              "pair": [
+                "X1",
+                "X4"
+              ],
+              "step": 6
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 5,
+          "order": "ordered",
+          "seed": 7,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 8,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 9,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 3
+            },
+            {
+              "interaction_p": 0.103857,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 1.54339e-18,
+              "pair": [
+                "X4",
+                "X5"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 4,
+          "order": "ordered",
+          "seed": 10,
+          "tests_after_first_significant": 0
+        }
+      ],
+      "test_count_distribution": {
+        "3": 4,
+        "4": 4,
+        "5": 2
+      },
+      "union": [
+        "X1:X2",
+        "X1:X3",
+        "X1:X4",
+        "X2:X3",
+        "X4:X5"
+      ]
+    },
+    "Anthropic S-v3": {
+      "informative_ordered": 0,
+      "informative_runs": 0,
+      "jaccard": {
+        "empty_runs_excluded": 0,
+        "mean": 1.0,
+        "pairs_compared": 45
+      },
+      "mean_tests": 3,
+      "order_compatible_runs": 10,
+      "ordering": {
+        "top3_only_no_contrast": 10
+      },
+      "per_run": [
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 1,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 2,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 3,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 4,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 5,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 6,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 7,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 8,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 9,
+          "tests_after_first_significant": 2
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 2
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 4
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": 2,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 10,
+          "tests_after_first_significant": 2
+        }
+      ],
+      "test_count_distribution": {
+        "3": 10
+      },
+      "union": [
+        "X1:X2",
+        "X1:X3",
+        "X2:X3"
+      ]
+    },
+    "DeepSeek v2": {
+      "informative_ordered": 0,
+      "informative_runs": 0,
+      "jaccard": {
+        "empty_runs_excluded": 2,
+        "mean": 0.4642857142857143,
+        "pairs_compared": 28
+      },
+      "mean_tests": 0.8,
+      "order_compatible_runs": 8,
+      "ordering": {
+        "no_tests": 2,
+        "top3_only_no_contrast": 8
+      },
+      "per_run": [
+        {
+          "calls": [
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 7
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 1,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 2,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 3,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 7
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 4,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.175965,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 5,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 6,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [],
+          "first_significant_step": null,
+          "n_tests": 0,
+          "order": "no_tests",
+          "seed": 7,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 8,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [],
+          "first_significant_step": null,
+          "n_tests": 0,
+          "order": "no_tests",
+          "seed": 9,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.861433,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 6
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 10,
+          "tests_after_first_significant": null
+        }
+      ],
+      "test_count_distribution": {
+        "0": 2,
+        "1": 8
+      },
+      "union": [
+        "X1:X2",
+        "X1:X3"
+      ]
+    },
+    "DeepSeek v3": {
+      "informative_ordered": 0,
+      "informative_runs": 0,
+      "jaccard": {
+        "empty_runs_excluded": 3,
+        "mean": 0.38095238095238093,
+        "pairs_compared": 21
+      },
+      "mean_tests": 0.9,
+      "order_compatible_runs": 7,
+      "ordering": {
+        "no_tests": 3,
+        "top3_only_no_contrast": 7
+      },
+      "per_run": [
+        {
+          "calls": [],
+          "first_significant_step": null,
+          "n_tests": 0,
+          "order": "no_tests",
+          "seed": 1,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 5
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 2,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [],
+          "first_significant_step": null,
+          "n_tests": 0,
+          "order": "no_tests",
+          "seed": 3,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [],
+          "first_significant_step": null,
+          "n_tests": 0,
+          "order": "no_tests",
+          "seed": 4,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 8,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 5,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 3
+            }
+          ],
+          "first_significant_step": 3,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 6,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 4
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 7,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 7
+            }
+          ],
+          "first_significant_step": 7,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 8,
+          "tests_after_first_significant": 0
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 7
+            }
+          ],
+          "first_significant_step": null,
+          "n_tests": 1,
+          "order": "top3_only_no_contrast",
+          "seed": 9,
+          "tests_after_first_significant": null
+        },
+        {
+          "calls": [
+            {
+              "interaction_p": 1.17734e-77,
+              "pair": [
+                "X1",
+                "X3"
+              ],
+              "step": 6
+            },
+            {
+              "interaction_p": 0.045637,
+              "pair": [
+                "X2",
+                "X3"
+              ],
+              "step": 7
+            },
+            {
+              "interaction_p": 0.520085,
+              "pair": [
+                "X1",
+                "X2"
+              ],
+              "step": 8
+            }
+          ],
+          "first_significant_step": 6,
+          "n_tests": 3,
+          "order": "top3_only_no_contrast",
+          "seed": 10,
+          "tests_after_first_significant": 2
+        }
+      ],
+      "test_count_distribution": {
+        "0": 3,
+        "1": 6,
+        "3": 1
+      },
+      "union": [
+        "X1:X2",
+        "X1:X3",
+        "X2:X3"
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient 2.126, p < 0.001; correlation with Y r=0.730, p < 0.001; holds in holdout."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient -1.511, p < 0.001."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.498, p < 0.001."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.170, p < 0.001."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.140, p < 0.001."
+    },
+    {
+      "term": "X1:X3",
+      "direction": "positive",
+      "evidence": "Interaction test: coefficient 0.767, p < 0.001, delta R² = 0.062."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "supported",
+      "reason": "Interaction is significant (p < 0.001) and adds R² 0.062."
+    },
+    {
+      "terms": ["X2", "X3"],
+      "status": "rejected",
+      "reason": "Interaction p=0.046 (marginal) and small delta R²=0.003, not meaningful."
+    },
+    {
+      "terms": ["X1", "X2"],
+      "status": "rejected",
+      "reason": "Interaction p=0.520 and delta R²=0.0002, not significant."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

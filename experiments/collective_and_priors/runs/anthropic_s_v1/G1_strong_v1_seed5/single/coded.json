@@ -1,0 +1,39 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.021052631578947368,
+  "fabricated_values": [
+    1e-252,
+    1e-165
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Interaction p~1.5e-18 with delta_r2 0.0735, a large jump relative to the X4+X5 baseline. Not tested on holdout, so out-of-sample confirmation is lacking.",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 2,
+  "n_invalid_actions": 0,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X2",
+      "X3"
+    ],
+    [
+      "X4",
+      "X5"
+    ]
+  ],
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

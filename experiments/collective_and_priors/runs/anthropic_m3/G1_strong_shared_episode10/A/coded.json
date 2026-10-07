@@ -1,0 +1,35 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "claim_without_test": false,
+  "coverage": 0.015789473684210527,
+  "fabricated_values": [],
+  "interaction_code": "not_considered",
+  "interaction_reason_raw": null,
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 0,
+  "n_invalid_actions": 0,
+  "own_test_X4X5": false,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X2",
+      "X3"
+    ]
+  ],
+  "position": 1,
+  "rejection_reason_matches": [],
+  "rejection_reason_primary": null,
+  "seen_X4X5_only": false,
+  "top3_false_positive": false,
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

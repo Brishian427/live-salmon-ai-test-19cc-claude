@@ -1,0 +1,68 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "r=0.730, p<0.001; regression coef=2.126, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "r=-0.552, p<0.001; regression coef=-1.511, p<0.001"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "r=0.151, p<0.001; regression coef=0.498, p<0.001"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "regression coef=0.140, p=0.0004"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "regression coef=0.170, p<0.001"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": [
+        "X1",
+        "X3"
+      ],
+      "status": "supported",
+      "reason": "Interaction term significant: coef=0.767, p<0.001, delta R2=0.062"
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data, cannot infer causality"
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data, cannot infer causality"
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data, cannot infer causality"
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data, cannot infer causality"
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data, cannot infer causality"
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

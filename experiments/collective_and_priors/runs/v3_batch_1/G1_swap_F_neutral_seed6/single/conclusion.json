@@ -1,0 +1,55 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient 2.126, p<0.001; consistent in holdout models"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.498, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient -1.511, p<0.001"
+    },
+    {
+      "term": "X1:X3",
+      "direction": "positive",
+      "evidence": "Interaction coefficient 0.767, p<0.001; substantial R2 increase (0.062)"
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "supported",
+      "reason": "Significant interaction (p<1e-77), R2 delta=0.062, holdout test R2=0.835"
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; correlation and regression do not establish causation"
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Significant but no causal inference possible"
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Significant but no causal inference possible"
+    },
+    {
+      "term": "X1:X3",
+      "claim": "associational",
+      "reason": "Interaction effect is statistical, not causal"
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

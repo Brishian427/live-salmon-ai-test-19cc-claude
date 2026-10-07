@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "attempted_runs": 3,
+      "complete_runs": 3,
+      "configuration_reason": "Official documentation says disabled is rejected; use the pre-registered between_tools fallback.",
+      "model": "claude-sonnet-5-5",
+      "parameters": {
+        "assistant_prefill_sent": false,
+        "cache_control_sent": false,
+        "effort_default": "high",
+        "effort_sent": false,
+        "max_tokens": 2048,
+        "model": "claude-sonnet-5-5",
+        "native_tools_sent": false,
+        "structured_output_sent": false,
+        "temperature": 1.0,
+        "thinking": {
+          "type": "between_tools"
+        },
+        "top_k_sent": false,
+        "top_p_sent": false
+      },
+      "passed": true,
+      "reason": "zero thinking blocks and >=2/3 complete",
+      "thinking_block_runs": 0
+    }
+  ],
+  "selected_model": "claude-sonnet-5-5"
+}

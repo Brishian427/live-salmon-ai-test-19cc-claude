@@ -1,0 +1,1 @@
+{"a":"X1","b":"X4","delta_r2":0.00142857,"interaction_coef":-0.108642,"interaction_p":0.0883122,"interaction_se":0.0636808,"model":"Y ~ a + b + a:b","n":1000,"r2_with_interaction":0.511143,"r2_without_interaction":0.509714,"tool":"test_interaction"}

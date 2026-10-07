@@ -1,0 +1,69 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "correlation r=0.712, p<0.001; regression coef=2.028, p<0.001"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "correlation r=0.171, p<0.001; regression coef=0.546, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "correlation r=-0.539, p<0.001; regression coef=-1.450, p<0.001"
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "correlation r=0.107, p=0.0007; regression coef=0.184, p<0.001"
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "correlation r=0.062, p=0.0496; regression coef=0.150, p=0.0003"
+    },
+    {
+      "term": "X6",
+      "direction": "unspecified",
+      "evidence": "correlation and regression not significant (p>0.05)"
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for all confounders."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for all confounders."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for all confounders."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for all confounders."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; no manipulation or control for all confounders."
+    },
+    {
+      "term": "X6",
+      "claim": "none",
+      "reason": "Not significantly associated with Y."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

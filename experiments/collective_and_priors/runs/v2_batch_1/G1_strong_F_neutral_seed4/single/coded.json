@@ -1,0 +1,30 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.005263157894736842,
+  "fabricated_values": [
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "interaction_code": "not_considered",
+  "interaction_reason_raw": null,
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 5,
+  "n_invalid_actions": 0,
+  "new_pairs_added": 1,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ]
+  ],
+  "position": 1,
+  "rejection_reason_matches": [],
+  "rejection_reason_primary": null,
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

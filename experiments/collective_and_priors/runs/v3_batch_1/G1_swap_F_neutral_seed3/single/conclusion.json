@@ -1,0 +1,29 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.7303, p<0.001; regression coefficient coef=2.2197, p<0.001; holdout test R2=0.567 when combined with X2."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.1512, p<0.001; regression coefficient coef=0.4966, p<0.001 when included with X1."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; no experimental manipulation or control for all confounders; association is strong but causality not established."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; causality cannot be inferred from correlation and regression alone."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

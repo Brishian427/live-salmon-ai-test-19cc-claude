@@ -1,0 +1,8 @@
+{
+  "M1": 110,
+  "M2": 60,
+  "label": "computed from 10 independent single-agent runs by exhaustive triples; assumes exchangeability.",
+  "n_triples": 120,
+  "single_false_positive": 0,
+  "single_supported": 5
+}

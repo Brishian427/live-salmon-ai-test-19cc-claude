@@ -1,0 +1,80 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation r=0.712329 (p<0.001), regression coef=2.03219 (p<0.001)."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coef=0.547388 (p<0.001)."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coef=-1.44013 (p<0.001)."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coef=0.180924 (p<0.001)."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coef=0.14717 (p<0.001)."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "uncertain",
+      "reason": "Adding X1:X2 did not improve holdout R2 significantly (0.771772 vs 0.771869)."
+    },
+    {
+      "terms": ["X1", "X3"],
+      "status": "uncertain",
+      "reason": "Adding X1:X3 did not improve holdout R2 significantly (0.771772 vs 0.771869)."
+    },
+    {
+      "terms": ["X2", "X4"],
+      "status": "uncertain",
+      "reason": "Holdout R2 decreased (0.768603 vs 0.771772) and interaction not significant."
+    },
+    {
+      "terms": ["X3", "X5"],
+      "status": "uncertain",
+      "reason": "Holdout R2 decreased (0.768603 vs 0.771772) and interaction not significant."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational dataset; no causal inference methods applied."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational dataset; no causal inference methods applied."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational dataset; no causal inference methods applied."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational dataset; no causal inference methods applied."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational dataset; no causal inference methods applied."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

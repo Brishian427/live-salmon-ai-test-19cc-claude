@@ -1,0 +1,65 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient 2.032 (p<0.001), correlation r=0.712 with Y, and strong holdout performance when included."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.547 (p<0.001) and correlation r=0.171 with Y."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient -1.440 (p<0.001)."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.181 (p<0.001)."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.147 (p<0.001)."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X2"],
+      "status": "rejected",
+      "evidence": "Interaction p=0.176, delta R2=0.00084, holdout test R2 unchanged (0.7718 vs 0.7718 when included)."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only observational data and correlations are available; no experimental or causal inference design is present."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only observational data and correlations are available; no experimental or causal inference design is present."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only observational data and correlations are available; no experimental or causal inference design is present."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only observational data and correlations are available; no experimental or causal inference design is present."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Only observational data and correlations are available; no experimental or causal inference design is present."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

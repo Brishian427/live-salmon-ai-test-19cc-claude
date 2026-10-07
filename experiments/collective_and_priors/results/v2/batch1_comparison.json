@@ -1,0 +1,281 @@
+{
+  "v1": {
+    "any_test_interaction": 0,
+    "api_calls": 90,
+    "claim_without_test": 1,
+    "claims_without_test": [
+      {
+        "reasons": [
+          "Adding X1:X2 did not improve holdout R2 significantly (0.771772 vs 0.771869).",
+          "Adding X1:X3 did not improve holdout R2 significantly (0.771772 vs 0.771869).",
+          "Holdout R2 decreased (0.768603 vs 0.771772) and interaction not significant.",
+          "Holdout R2 decreased (0.768603 vs 0.771772) and interaction not significant."
+        ],
+        "seed": 9
+      }
+    ],
+    "estimated_usd": 0.0513898,
+    "first": {
+      "correlation": 21,
+      "distribution": 14,
+      "holdout": 1,
+      "invalid": 0,
+      "regression": 4,
+      "test_interaction": 0
+    },
+    "interaction_pairs": {},
+    "n": 10,
+    "per_run": [
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 3,
+        "reported_supported": false,
+        "seed": 1,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 2,
+        "reported_supported": false,
+        "seed": 2,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 2,
+        "reported_supported": false,
+        "seed": 3,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 4,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 6,
+        "reported_supported": false,
+        "seed": 5,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 3,
+        "reported_supported": false,
+        "seed": 6,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 2,
+        "reported_supported": false,
+        "seed": 7,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 1,
+        "reported_supported": false,
+        "seed": 8,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": true,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 9,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 6,
+        "reported_supported": false,
+        "seed": 10,
+        "target_test_interaction": false
+      }
+    ],
+    "pooled": {
+      "correlation": 42,
+      "distribution": 14,
+      "holdout": 10,
+      "invalid": 0,
+      "regression": 14,
+      "test_interaction": 0
+    },
+    "reported_supported": 0,
+    "second": {
+      "correlation": 21,
+      "distribution": 0,
+      "holdout": 9,
+      "invalid": 0,
+      "regression": 10,
+      "test_interaction": 0
+    },
+    "target_test_interaction": 0,
+    "width_distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 2,
+      "6": 2,
+      "20": 2
+    }
+  },
+  "v2": {
+    "any_test_interaction": 8,
+    "api_calls": 90,
+    "claim_without_test": 0,
+    "claims_without_test": [],
+    "estimated_usd": 0.069391344,
+    "first": {
+      "correlation": 15,
+      "distribution": 10,
+      "holdout": 6,
+      "invalid": 1,
+      "regression": 7,
+      "test_interaction": 1
+    },
+    "interaction_pairs": {
+      "X1:X2": 3,
+      "X1:X3": 5
+    },
+    "n": 10,
+    "per_run": [
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 1,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 2,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 3,
+        "reported_supported": false,
+        "seed": 3,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 4,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 5,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 1,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 6,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 4,
+        "reported_supported": false,
+        "seed": 7,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 8,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": false,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 9,
+        "target_test_interaction": false
+      },
+      {
+        "any_test_interaction": true,
+        "claim_without_test": false,
+        "invalid_actions": 0,
+        "max_regression_width": 20,
+        "reported_supported": false,
+        "seed": 10,
+        "target_test_interaction": false
+      }
+    ],
+    "pooled": {
+      "correlation": 25,
+      "distribution": 14,
+      "holdout": 16,
+      "invalid": 1,
+      "regression": 16,
+      "test_interaction": 8
+    },
+    "reported_supported": 0,
+    "second": {
+      "correlation": 10,
+      "distribution": 4,
+      "holdout": 10,
+      "invalid": 0,
+      "regression": 9,
+      "test_interaction": 7
+    },
+    "target_test_interaction": 0,
+    "width_distribution": {
+      "3": 1,
+      "4": 1,
+      "20": 8
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.712, p<0.001; regression with X3: coef=2.02, p<0.001"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Correlation with Y: r=-0.539, p<0.001; regression with X1: coef=-1.45, p<0.001"
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational study; only correlation and regression were used, not causal inference methods."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational study; only correlation and regression were used, not causal inference methods."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

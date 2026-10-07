@@ -1,0 +1,65 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient 2.028 (p < 0.0001) in model with X1-X5; correlation with Y r=0.712."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.546 (p < 0.0001) in model with X1-X5."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient -1.449 (p < 0.0001) in model with X1-X5; correlation with Y r=-0.539."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.183 (p < 0.0001) in model with X1-X5."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient 0.150 (p < 0.001) in model with X1-X5."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "rejected",
+      "reason": "Interaction term not significant (p=0.861) and negligible delta R^2 in test_interaction."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality despite strong association."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Observational data; cannot establish causality."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

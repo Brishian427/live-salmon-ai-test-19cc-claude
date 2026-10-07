@@ -1,0 +1,213 @@
+"""Generate the design-only Live Salmon experimental overview figure."""
+
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SVG_PATH = ROOT / "results" / "figures" / "experiment_design.svg"
+
+
+def main() -> None:
+    SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="fig-title fig-desc">
+  <rect x="0" y="0" width="1200" height="820" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-dark" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52606D"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2A9D8F"/>
+    </marker>
+    <marker id="arrow-teal-light" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#86CFC7"/>
+    </marker>
+  </defs>
+  <title id="fig-title">Live Salmon Test — experimental design</title>
+  <desc id="fig-desc">Four-panel diagram showing the known synthetic world, one agent's logged tool-use loop, automatic scoring, and the independent and shared-log experimental conditions.</desc>
+  <style>
+    text { font-family: "DejaVu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif; fill: #29333D; }
+    .figure-title { font-size: 22px; font-weight: 700; }
+    .panel-title { font-size: 18px; font-weight: 700; }
+    .body { font-size: 13px; }
+    .body-bold { font-size: 13px; font-weight: 700; }
+    .small { font-size: 13px; }
+    .panel { fill: #FBFCFD; stroke: #CBD3DA; stroke-width: 1.4; }
+    .data-fill { fill: #EAF3F8; stroke: #3B7EA1; stroke-width: 1.4; }
+    .agent-fill { fill: #E4F5F2; stroke: #2A9D8F; stroke-width: 1.4; }
+    .tool-fill { fill: #F0EDF5; stroke: #746A8E; stroke-width: 1.4; }
+    .score-fill { fill: #FFF4DC; stroke: #D99A2B; stroke-width: 1.4; }
+    .neutral-fill { fill: #F4F6F8; stroke: #97A4AF; stroke-width: 1.2; }
+    .flow { fill: none; stroke: #52606D; stroke-width: 1.7; marker-end: url(#arrow-dark); }
+    .shared { fill: none; stroke: #2A9D8F; stroke-width: 1.8; marker-end: url(#arrow-teal); }
+    .shared-light { fill: none; stroke: #86CFC7; stroke-width: 1.6; marker-end: url(#arrow-teal-light); }
+  </style>
+
+  <text x="600" y="32" text-anchor="middle" class="figure-title">Live Salmon Test — experimental design</text>
+
+  <!-- Panel 1 -->
+  <rect x="25" y="55" width="330" height="335" rx="12" class="panel"/>
+  <rect x="25" y="55" width="7" height="335" rx="3.5" fill="#3B7EA1"/>
+  <text x="47" y="84" class="panel-title">1 · The world we built</text>
+  <rect x="47" y="105" width="286" height="80" rx="8" class="data-fill"/>
+  <text x="190" y="132" text-anchor="middle" class="body-bold">Known synthetic response</text>
+  <text x="63" y="155" class="body">Y = 2X<tspan dy="4">1</tspan><tspan dy="-4"> + 0.5X</tspan><tspan dy="4">2</tspan><tspan dy="-4"> − 1.5X</tspan><tspan dy="4">3</tspan><tspan dy="-4"> + 0.1X</tspan><tspan dy="4">4</tspan><tspan dy="-4"> + 0.1X</tspan><tspan dy="4">5</tspan></text>
+  <text x="149" y="174" class="body">+ 0.8·X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> + ε</tspan></text>
+  <text x="47" y="201" class="body-bold">20 features · 1,000 rows</text>
+  <text x="47" y="222" class="body">X<tspan dy="4">6</tspan><tspan dy="-4">–X</tspan><tspan dy="4">20</tspan><tspan dy="-4"> are distractors</tspan></text>
+  <rect x="47" y="240" width="286" height="66" rx="8" fill="#F7FAFC" stroke="#3B7EA1" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <rect x="61" y="255" width="14" height="13" rx="2" fill="none" stroke="#3B7EA1" stroke-width="1.5"/>
+  <path d="M64 255 v-4 a4 4 0 0 1 8 0 v4" fill="none" stroke="#3B7EA1" stroke-width="1.5"/>
+  <text x="84" y="263" class="body-bold">Ground truth is written by us</text>
+  <text x="84" y="284" class="body">and never shown to the agent</text>
+  <rect x="47" y="324" width="286" height="42" rx="8" class="data-fill"/>
+  <text x="80" y="350" class="body">Swap variant: interaction moved to X<tspan dy="4">1</tspan><tspan dy="-4">X</tspan><tspan dy="4">3</tspan></text>
+
+  <!-- Top-row flow -->
+  <path d="M357 222 H383" class="flow"/>
+
+  <!-- Panel 2 -->
+  <rect x="385" y="55" width="425" height="335" rx="12" class="panel"/>
+  <rect x="385" y="55" width="7" height="335" rx="3.5" fill="#2A9D8F"/>
+  <text x="407" y="84" class="panel-title">2 · One agent</text>
+  <rect x="410" y="127" width="92" height="58" rx="10" class="agent-fill"/>
+  <text x="456" y="161" text-anchor="middle" class="body-bold">Agent</text>
+
+  <rect x="548" y="105" width="160" height="133" rx="10" class="tool-fill"/>
+  <text x="628" y="128" text-anchor="middle" class="body-bold">Tool service</text>
+  <line x1="562" y1="138" x2="694" y2="138" stroke="#B8B0C5" stroke-width="1"/>
+  <text x="564" y="157" class="body">distribution</text>
+  <text x="564" y="175" class="body">correlation</text>
+  <text x="564" y="193" class="body">regression</text>
+  <text x="564" y="211" class="body">test_interaction</text>
+  <text x="564" y="229" class="body">holdout</text>
+
+  <rect x="750" y="127" width="38" height="58" rx="6" class="neutral-fill"/>
+  <path d="M759 140 H779 M759 148 H779 M759 156 H776 M759 164 H781 M759 172 H774" stroke="#52606D" stroke-width="1.5"/>
+  <text x="769" y="207" text-anchor="middle" class="body-bold">Action</text>
+  <text x="769" y="224" text-anchor="middle" class="body-bold">log</text>
+
+  <path d="M502 156 H542" class="shared"/>
+  <text x="522" y="145" text-anchor="middle" class="small">JSON</text>
+  <text x="522" y="174" text-anchor="middle" class="small">action</text>
+  <path d="M708 156 H744" class="flow"/>
+  <text x="726" y="145" text-anchor="middle" class="small">result</text>
+  <path d="M769 235 V269 H456 V191" class="flow"/>
+  <text x="613" y="263" text-anchor="middle" class="small">logged context returns to the agent</text>
+
+  <rect x="473" y="285" width="250" height="30" rx="15" class="agent-fill"/>
+  <text x="598" y="305" text-anchor="middle" class="body-bold">× 8 actions, then a written conclusion</text>
+  <text x="598" y="340" text-anchor="middle" class="body">The agent decides; the service computes.</text>
+  <text x="598" y="361" text-anchor="middle" class="body">The log is everything the agent knows.</text>
+
+  <!-- Top-row flow -->
+  <path d="M812 222 H838" class="flow"/>
+
+  <!-- Panel 3 -->
+  <rect x="840" y="55" width="335" height="335" rx="12" class="panel"/>
+  <rect x="840" y="55" width="7" height="335" rx="3.5" fill="#D99A2B"/>
+  <text x="862" y="84" class="panel-title">3 · Scoring</text>
+  <text x="862" y="106" class="body">Automatic, from the log and conclusion</text>
+
+  <rect x="858" y="132" width="88" height="72" rx="9" class="neutral-fill"/>
+  <text x="902" y="161" text-anchor="middle" class="body-bold">not</text>
+  <text x="902" y="180" text-anchor="middle" class="body-bold">considered</text>
+  <path d="M948 168 H964" class="flow"/>
+  <rect x="966" y="132" width="96" height="72" rx="9" class="neutral-fill"/>
+  <text x="1014" y="153" text-anchor="middle" class="body-bold">considered</text>
+  <text x="1014" y="172" text-anchor="middle" class="body-bold">and</text>
+  <text x="1014" y="191" text-anchor="middle" class="body-bold">rejected</text>
+  <path d="M1064 168 H1080" class="flow"/>
+  <rect x="1082" y="132" width="77" height="72" rx="9" class="score-fill"/>
+  <text x="1120.5" y="153" text-anchor="middle" class="body-bold">reported</text>
+  <text x="1120.5" y="172" text-anchor="middle" class="body-bold">as</text>
+  <text x="1120.5" y="191" text-anchor="middle" class="body-bold">supported</text>
+  <rect x="1091" y="213" width="59" height="25" rx="12.5" fill="#D99A2B"/>
+  <text x="1120.5" y="230" text-anchor="middle" class="body-bold" fill="#FFFFFF">success</text>
+
+  <rect x="862" y="263" width="291" height="51" rx="8" class="score-fill"/>
+  <text x="1007.5" y="284" text-anchor="middle" class="body-bold">Any number in the conclusion</text>
+  <text x="1007.5" y="303" text-anchor="middle" class="body">that is not in the log → fabricated</text>
+  <rect x="862" y="329" width="291" height="37" rx="8" class="neutral-fill"/>
+  <text x="1007.5" y="353" text-anchor="middle" class="body-bold">Re-scores offline with no API calls</text>
+
+  <!-- Panel 4 -->
+  <rect x="25" y="410" width="1150" height="372" rx="12" class="panel"/>
+  <rect x="25" y="410" width="7" height="372" rx="3.5" fill="#746A8E"/>
+  <text x="47" y="441" class="panel-title">4 · Conditions</text>
+  <line x1="620" y1="457" x2="620" y2="758" stroke="#D5DAE0" stroke-width="1.4"/>
+
+  <!-- Conditions: independent arms -->
+  <text x="47" y="469" class="body-bold">Single agents · 10 runs each</text>
+  <text x="179" y="499" text-anchor="middle" class="body-bold">v1</text>
+  <text x="179" y="517" text-anchor="middle" class="body">output format hidden</text>
+  <text x="349" y="499" text-anchor="middle" class="body-bold">v2</text>
+  <text x="349" y="517" text-anchor="middle" class="body">output format shown</text>
+  <text x="519" y="499" text-anchor="middle" class="body-bold">v3</text>
+  <text x="470" y="517" class="body">interaction on X<tspan dy="4">1</tspan><tspan dy="-4">X</tspan><tspan dy="4">3</tspan></text>
+
+  <rect x="47" y="536" width="111" height="72" rx="9" class="agent-fill"/>
+  <text x="102.5" y="566" text-anchor="middle" class="body-bold">DeepSeek-</text>
+  <text x="102.5" y="586" text-anchor="middle" class="body-bold">chat</text>
+  <rect x="167" y="536" width="154" height="72" rx="8" class="neutral-fill"/>
+  <rect x="329" y="536" width="154" height="72" rx="8" class="neutral-fill"/>
+  <rect x="491" y="536" width="104" height="72" rx="8" class="data-fill"/>
+  <text x="212" y="567" class="body">X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="244" y="587" text-anchor="middle" class="body">· format hidden</text>
+  <text x="374" y="567" class="body">X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="406" y="587" text-anchor="middle" class="body">· format shown</text>
+  <text x="511" y="567" class="body">X<tspan dy="4">1</tspan><tspan dy="-4">X</tspan><tspan dy="4">3</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="543" y="587" text-anchor="middle" class="body">· format shown</text>
+
+  <rect x="47" y="620" width="111" height="72" rx="9" class="agent-fill"/>
+  <text x="102.5" y="650" text-anchor="middle" class="body-bold">Claude</text>
+  <text x="102.5" y="670" text-anchor="middle" class="body-bold">Sonnet 5.5</text>
+  <rect x="167" y="620" width="154" height="72" rx="8" class="neutral-fill"/>
+  <rect x="329" y="620" width="154" height="72" rx="8" class="neutral-fill"/>
+  <rect x="491" y="620" width="104" height="72" rx="8" class="data-fill"/>
+  <text x="212" y="651" class="body">X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="244" y="671" text-anchor="middle" class="body">· format hidden</text>
+  <text x="374" y="651" class="body">X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="406" y="671" text-anchor="middle" class="body">· format shown</text>
+  <text x="511" y="651" class="body">X<tspan dy="4">1</tspan><tspan dy="-4">X</tspan><tspan dy="4">3</tspan><tspan dy="-4"> data</tspan></text>
+  <text x="543" y="671" text-anchor="middle" class="body">· format shown</text>
+  <text x="321" y="727" text-anchor="middle" class="body">Same tools · same action budget · separate arms</text>
+
+  <!-- Conditions: collective -->
+  <text x="647" y="469" class="body-bold">Collective — Sonnet, format shown, X<tspan dy="4">4</tspan><tspan dy="-4">X</tspan><tspan dy="4">5</tspan><tspan dy="-4"> data, 10 episodes</tspan></text>
+  <text x="647" y="500" class="body-bold">M1 / M2 · isolated agents</text>
+  <rect x="650" y="518" width="92" height="48" rx="9" class="agent-fill"/>
+  <rect x="759" y="518" width="92" height="48" rx="9" class="agent-fill"/>
+  <rect x="868" y="518" width="92" height="48" rx="9" class="agent-fill"/>
+  <text x="696" y="548" text-anchor="middle" class="body-bold">Agent A</text>
+  <text x="805" y="548" text-anchor="middle" class="body-bold">Agent B</text>
+  <text x="914" y="548" text-anchor="middle" class="body-bold">Agent C</text>
+  <text x="986" y="535" class="body-bold">M1: any of 3</text>
+  <text x="986" y="558" class="body-bold">M2: at least 2 of 3</text>
+  <text x="650" y="588" class="body">computed from the independent single-agent runs</text>
+
+  <line x1="647" y1="607" x2="1152" y2="607" stroke="#D5DAE0" stroke-width="1"/>
+  <text x="647" y="630" class="body-bold">M3 · sequential shared log</text>
+  <rect x="950" y="612" width="190" height="28" rx="14" class="score-fill"/>
+  <text x="1045" y="631" text-anchor="middle" class="body-bold">M3: at least 2 of 3</text>
+  <rect x="650" y="672" width="92" height="48" rx="9" class="agent-fill"/>
+  <rect x="809" y="672" width="92" height="48" rx="9" class="agent-fill"/>
+  <rect x="968" y="672" width="92" height="48" rx="9" class="agent-fill"/>
+  <text x="696" y="702" text-anchor="middle" class="body-bold">Agent A</text>
+  <text x="855" y="702" text-anchor="middle" class="body-bold">Agent B</text>
+  <text x="1014" y="702" text-anchor="middle" class="body-bold">Agent C</text>
+  <path d="M744 696 H803" class="shared"/>
+  <path d="M903 696 H962" class="shared"/>
+  <path d="M696 670 C770 638 940 638 1014 670" class="shared-light"/>
+  <text x="775" y="667" text-anchor="middle" class="small">shared log</text>
+  <text x="934" y="667" text-anchor="middle" class="small">shared log</text>
+  <text x="650" y="749" class="body">tool calls and results, not conclusions</text>
+  <text x="968" y="749" class="body">C sees A and B</text>
+
+  <text x="600" y="811" text-anchor="middle" class="small">Known ground truth · fixed tools · every claim checked against the action log</text>
+</svg>
+'''
+    SVG_PATH.write_text(svg, encoding="utf-8", newline="\n")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,35 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.015789473684210527,
+  "fabricated_values": [
+    1e-281,
+    1e-189
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Highly significant interaction with a meaningful delta R2 of 0.062 and a clear out-of-sample holdout improvement (0.818 to 0.876).",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 2,
+  "n_invalid_actions": 1,
+  "pairs_touched": [
+    [
+      "X1",
+      "X2"
+    ],
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X2",
+      "X3"
+    ]
+  ],
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

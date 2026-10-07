@@ -1,0 +1,45 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "claim_without_test": false,
+  "coverage": 0.021052631578947368,
+  "fabricated_values": [
+    1e-252,
+    1e-165
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Highly significant product term (p=1.5e-18) and a large out-of-sample gain in holdout R2 (~0.77 to ~0.88).",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 2,
+  "n_invalid_actions": 0,
+  "new_pairs_added": 4,
+  "own_test_X4X5": true,
+  "pairs_touched": [
+    [
+      "X1",
+      "X4"
+    ],
+    [
+      "X1",
+      "X5"
+    ],
+    [
+      "X3",
+      "X4"
+    ],
+    [
+      "X4",
+      "X5"
+    ]
+  ],
+  "position": 2,
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "seen_X4X5_only": false,
+  "top3_false_positive": false,
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

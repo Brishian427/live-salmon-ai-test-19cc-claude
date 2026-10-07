@@ -1,0 +1,9 @@
+{
+  "claim_without_test": false,
+  "own_test_X4X5": false,
+  "position": 2,
+  "protocol_error": "invalid JSON: Expecting value",
+  "seen_X4X5_only": false,
+  "status": "protocol_failure",
+  "top3_false_positive": false
+}

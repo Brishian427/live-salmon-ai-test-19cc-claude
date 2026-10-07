@@ -1,0 +1,64 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Strong positive correlation (r=0.712, p<0.001) and significant regression coefficient (coef=2.029, p<0.001) controlling for X2, X3, X4, X5, X7."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Moderate positive correlation (r=0.171, p<0.001) and significant regression coefficient (coef=0.546, p<0.001) controlling for other variables."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Strong negative correlation (r=-0.539, p<0.001) and significant negative regression coefficient (coef=-1.449, p<0.001) controlling for other variables."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Weak positive correlation (r=0.107, p<0.001) and significant regression coefficient (coef=0.184, p<0.001) controlling for other variables."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Weak positive correlation (r=0.062, p=0.050) and significant regression coefficient (coef=0.150, p<0.001) controlling for other variables."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only observational data; no manipulation or control for confounding beyond included covariates."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only observational data; no manipulation or control for confounding beyond included covariates."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only observational data; no manipulation or control for confounding beyond included covariates."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only observational data; no manipulation or control for confounding beyond included covariates."
+    },
+    {
+      "term": "X5",
+      "claim": "associational",
+      "reason": "Only observational data; no manipulation or control for confounding beyond included covariates."
+    },
+    {
+      "term": "X7",
+      "claim": "none",
+      "reason": "Not significantly associated in regression (p=0.833) despite borderline correlation (p=0.038)."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

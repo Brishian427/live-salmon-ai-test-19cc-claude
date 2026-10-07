@@ -1,0 +1,8 @@
+{
+  "api_calls": 9,
+  "completion_tokens": 975,
+  "enforcement_usd": 0.058199999999999995,
+  "estimated_usd": 0.058199999999999995,
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 24225
+}

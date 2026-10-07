@@ -1,0 +1,23 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "r=0.712 (p<0.001), coefficient 2.04 (p<0.001) in multiple regression, holdout test R2=0.765"
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "r=0.171 (p<0.001), coefficient 0.549 (p<0.001) in multiple regression"
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "r=-0.539 (p<0.001), coefficient -1.45 (p<0.001) in multiple regression"
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

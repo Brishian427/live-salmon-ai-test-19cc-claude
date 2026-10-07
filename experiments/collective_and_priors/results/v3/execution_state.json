@@ -1,0 +1,11 @@
+{
+  "completed_batches": [
+    "v3_batch_1"
+  ],
+  "live_complete": true,
+  "pre_registered_outcome": "inconclusive",
+  "stop_reason": "Addendum 05 unconditional one-cell stop",
+  "stopped_at": "v3_batch_1",
+  "target_reported_supported": 4,
+  "temperature": 1.0
+}

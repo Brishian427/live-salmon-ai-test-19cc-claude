@@ -1,0 +1,49 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Strong positive correlation with Y (r=0.712, p<0.001) and significant positive coefficient in multiple regression (coef=2.038, p<0.001)."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Positive correlation with Y (r=0.171, p<0.001) and significant positive coefficient in multiple regression (coef=0.549, p<0.001)."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Negative correlation with Y (r=-0.539, p<0.001) and significant negative coefficient in multiple regression (coef=-1.452, p<0.001)."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Weak positive correlation with Y (r=0.107, p=0.001), but not tested in regression with other variables."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Observational data; regression indicates association but cannot establish causality without further experimental or longitudinal evidence."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Observational data; regression indicates association but cannot establish causality."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Observational data; regression indicates association but cannot establish causality."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only zero-order correlation observed; association may be confounded by other variables."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

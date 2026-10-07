@@ -1,0 +1,49 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.712, p<0.001. In multiple regression with X3, X4, X2: coef=2.021, p<0.001."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Correlation with Y: r=-0.539, p<0.001. In multiple regression with X1, X4, X2: coef=-1.459, p<0.001."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.171, p<0.001. In multiple regression with X1, X3, X4: coef=0.549, p<0.001."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Correlation with Y: r=0.107, p<0.001. In multiple regression with X1, X3, X2: coef=0.190, p<0.001."
+    }
+  ],
+  "interaction_claims": [],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation or adjustment for all confounders."
+    },
+    {
+      "term": "X3",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation or adjustment for all confounders."
+    },
+    {
+      "term": "X2",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation or adjustment for all confounders."
+    },
+    {
+      "term": "X4",
+      "claim": "associational",
+      "reason": "Only observational data; no experimental manipulation or adjustment for all confounders."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}

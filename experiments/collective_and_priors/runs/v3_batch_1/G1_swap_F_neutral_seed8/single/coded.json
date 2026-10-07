@@ -1,0 +1,51 @@
+{
+  "actions_after_first_significant": 7,
+  "any_supported": true,
+  "coverage": 0.02631578947368421,
+  "fabricated_values": [
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001,
+    0.001
+  ],
+  "interaction_code": "reported_supported",
+  "interaction_reason_raw": "Interaction test: interaction coefficient=0.767, p<0.001; delta R2=0.062; holdout test R2 improves from 0.788 to 0.851 in full model, holdout test R2=0.835.",
+  "length_supported": false,
+  "n_actions": 8,
+  "n_fabricated": 8,
+  "n_invalid_actions": 0,
+  "new_pairs_added": 5,
+  "pairs_touched": [
+    [
+      "X1",
+      "X3"
+    ],
+    [
+      "X1",
+      "Y"
+    ],
+    [
+      "X2",
+      "Y"
+    ],
+    [
+      "X3",
+      "Y"
+    ],
+    [
+      "X4",
+      "Y"
+    ]
+  ],
+  "position": 1,
+  "rejection_reason_matches": [
+    "other"
+  ],
+  "rejection_reason_primary": "other",
+  "unsupported_by_log": false,
+  "used_holdout": true
+}

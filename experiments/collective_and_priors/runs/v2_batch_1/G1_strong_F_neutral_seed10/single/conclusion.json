@@ -1,0 +1,55 @@
+{
+  "supported_findings": [
+    {
+      "term": "X1",
+      "direction": "positive",
+      "evidence": "Regression coefficient = 2.03, p < 0.001; correlation with Y = 0.71, p < 0.001."
+    },
+    {
+      "term": "X3",
+      "direction": "negative",
+      "evidence": "Regression coefficient = -1.44, p < 0.001; correlation with Y = -0.54, p < 0.001."
+    },
+    {
+      "term": "X2",
+      "direction": "positive",
+      "evidence": "Regression coefficient = 0.55, p < 0.001; correlation with Y = 0.17, p < 0.001."
+    },
+    {
+      "term": "X4",
+      "direction": "positive",
+      "evidence": "Regression coefficient = 0.18, p < 0.001."
+    },
+    {
+      "term": "X5",
+      "direction": "positive",
+      "evidence": "Regression coefficient = 0.15, p = 0.0004."
+    }
+  ],
+  "interaction_claims": [
+    {
+      "terms": ["X1", "X3"],
+      "status": "rejected",
+      "reason": "Interaction test p = 0.861, delta R^2 < 0.0001."
+    }
+  ],
+  "causal_claims": [
+    {
+      "term": "X1",
+      "claim": "none",
+      "reason": "Observational data, no causal inference possible."
+    },
+    {
+      "term": "X3",
+      "claim": "none",
+      "reason": "Observational data, no causal inference possible."
+    },
+    {
+      "term": "X2",
+      "claim": "none",
+      "reason": "Observational data, no causal inference possible."
+    }
+  ],
+  "overall": "findings_reported",
+  "no_finding_reason": null
+}
